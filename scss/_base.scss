@@ -14,7 +14,7 @@
 
 $max-width: 112.500em; // site maximum width
 $total-columns: 12; // column grids
-$column-width: 2em; // column width
+$column-width: 3em; // column width
 $gutter-width: 2.5em; // gutters between columns
 $grid-padding: 1em; // grid outer padding
 
@@ -477,7 +477,6 @@ li.comment .avatar {
 
 #container {
     margin:     auto;
-    background: $white;
 }
 #header {
     margin: 2em 0;
@@ -495,11 +494,13 @@ li.comment .avatar {
 
 #content {
     width: 100%;
+    background: $white;
 }
 
 #sidebar-primary {
   width:   100%;
-  padding: 1.563em 0 0 0;
+  padding: 1.563em 1em 0;
+  background: #EAEAEA;
 }
 
 // Don't show on theme customizer. 
@@ -528,10 +529,10 @@ li.comment .avatar {
     font-size:   40px;
     font-size:   2.5rem;
     a {
-        background: url('images/logo.png');
+        background: url('images/logo.png') top left no-repeat;
         display: inline-block;
-        width: 431px;
-        height: 66px;
+        width: 411px;
+        height: 49px;
         
         outline: none;;
         overflow: hidden;
@@ -603,7 +604,7 @@ li.comment .avatar {
 
 .entry-title {
     word-wrap:  break-word;
-    color:      #050505;
+    color:      #4A4A4A;
     font-size:  48px;
     font-size:  3.001rem;
     font-weight: bold;
@@ -944,6 +945,11 @@ a.page-numbers:hover,
 
 .sidebar {}
 
+.widget-title {
+    font-weight: bold;
+    font-size: 18px;
+    font-size: 1.125rem;
+}
 .widget-tags {
     a {
         display:    inline-block;

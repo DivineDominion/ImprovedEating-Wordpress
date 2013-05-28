@@ -315,4 +315,18 @@ function seamless_embed_html( $html ) {
 	return $html;
 }
 
+// function foo_test_bar( $attr ) {
+//     $attr = shortcode_atts( array( 'before' => '', 'after' => '', 'format' => get_option( 'date_format' ) ), $attr );
+// 
+//     $published = '<abbr class="published" title="' . get_the_time( esc_attr__( 'l, F jS, Y, g:i a', 'hybrid-core' ) ) . '">' . get_the_time( $attr['format'] ) . 'XXX</abbr>';
+//     return $attr['before'] . $published . $attr['after'];
+// }
+// 
+// add_action( 'after_setup_theme', 'my_after_setup_theme' );
+// 
+// function my_after_setup_theme() {
+//     remove_shortcode('entry-published');
+//     add_shortcode('entry-published', 'foo_test_bar');
+// }
+
 ?>
