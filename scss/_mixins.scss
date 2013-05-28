@@ -12,11 +12,14 @@ $white:             #fff;
 
 $link-color:        #16B4CD;
 $link-hover:        darken($link-color, 9%);
+$special-link-hover:    desaturate(darken($link-color, 20%), 30%);
+$special-link-hover-bg: desaturate(lighten($link-color, 40%), 30%);
 
 
 // Typography
 // ==========================================================================
 
+$post-title:        'ITCFranklinGothic LT BookCn', Arial, sans-serif;
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             Georgia, serif;
 
