@@ -4,39 +4,6 @@
 //
 // ==========================================================================
 
-@function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
-}
-
-@mixin rem-fallback($property, $values...) {
-  $max: length($values);
-  $pxValues: '';
-  $remValues: '';
-
-  @for $i from 1 through $max {
-    $value: strip-unit(nth($values, $i));
-    $pxValues: #{$pxValues + $value*16}px;
-
-    @if $i < $max {
-      $pxValues: #{$pxValues + " "};
-    }
-  } 
-
-  @for $i from 1 through $max {
-    $value: strip-unit(nth($values, $i));
-    $remValues: #{$remValues + $value}rem;
-
-    @if $i < $max {
-      $remValues: #{$remValues + " "};
-    }
-  } 
-  
-  #{$property}: $pxValues; 
-  #{$property}: $remValues; 
-}
-
-$content-gutter: $gutter-width;
-
 // Layout
 
 #container {
@@ -45,7 +12,6 @@ $content-gutter: $gutter-width;
 
 .layout-2c-l #content {
     @include span-columns(8, 12);
-    @include rem-fallback(padding, 0, $content-gutter);
 }
 .layout-2c-r #content {
     @include span-columns(8 omega, 12);

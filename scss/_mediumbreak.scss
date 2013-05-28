@@ -3,3 +3,21 @@
 // Stylesheet: Medium Breakpoint
 //
 // ==========================================================================
+
+#site-title {
+    padding: 0;
+    a {
+        background-size: 100%;
+        width: 411px;
+        height: 49px;
+    }
+}
+
+#content { 
+    @include rem-fallback(padding, 0, $content-gutter);
+}
+
+#sidebar-primary {
+  padding-left: 1em;
+  padding-right: 1em;
+}

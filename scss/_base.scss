@@ -17,6 +17,7 @@ $total-columns: 12; // column grids
 $column-width: 3em; // column width
 $gutter-width: 2.5em; // gutters between columns
 $grid-padding: 1em; // grid outer padding
+$content-gutter: $gutter-width;
 
 // Fonts - Declare @font-face in _mixins.scss.
 
@@ -39,7 +40,6 @@ html {
 // Body
 
 body {
-    padding:     2%;
     overflow-x:  hidden;
     line-height: 1.6;
     font-family: $sans-serif;
@@ -475,6 +475,12 @@ li.comment .avatar {
 // Layout
 // ==========================================================================
 
+#content,
+#sidebar-primary {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #container {
     margin:     auto;
 }
@@ -499,7 +505,7 @@ li.comment .avatar {
 
 #sidebar-primary {
   width:   100%;
-  padding: 1.563em 1em 0;
+  padding-top: 1.563em;
   background: #EAEAEA;
 }
 
@@ -528,10 +534,13 @@ li.comment .avatar {
     text-align:  center;
     font-size:   40px;
     font-size:   2.5rem;
+    padding: 0 10px;
     a {
         background: url('images/logo.png') top left no-repeat;
+        background-size: contain;
         display: inline-block;
-        width: 411px;
+        width: 100%;
+        max-width: 411px;
         height: 49px;
         
         outline: none;;
@@ -950,6 +959,7 @@ a.page-numbers:hover,
     font-size: 18px;
     font-size: 1.125rem;
 }
+
 .widget-tags {
     a {
         display:    inline-block;
@@ -996,6 +1006,9 @@ a.page-numbers:hover,
     }
 }
 
+.sidebar .widget ul {
+    margin-left: 1.25em;
+}
 // ==========================================================================
 // Specific
 // ==========================================================================
