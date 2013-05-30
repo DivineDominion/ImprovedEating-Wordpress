@@ -1423,30 +1423,31 @@ li.comment:after, li.pingback:after, li.trackback:after,
   }
   /* line 34, scss/_largebreak.scss */
   #site-title a {
+    background-image: url("images/logo.png");
     background-size: 100%;
-    width: 600px;
-    height: 126.945px;
+    width: 530px;
+    height: 61px;
   }
 
-  /* line 40, scss/_largebreak.scss */
+  /* line 42, scss/_largebreak.scss */
   #site-description {
     clear: left;
     float: left;
     text-align: left;
   }
 
-  /* line 48, scss/_largebreak.scss */
+  /* line 50, scss/_largebreak.scss */
   .comment-text {
     padding: 1.563em 1.563em 0 1.563em;
   }
 
-  /* line 51, scss/_largebreak.scss */
+  /* line 53, scss/_largebreak.scss */
   ol.comment-list ol.children {
     margin: -1.563em 0 0 1.563em;
     padding: 1.563em 0 0 1.563em;
   }
 
-  /* line 58, scss/_largebreak.scss */
+  /* line 60, scss/_largebreak.scss */
   #respond input[type="text"],
   #respond input[type="password"],
   #respond input[type="email"] {
@@ -1456,7 +1457,7 @@ li.comment:after, li.pingback:after, li.trackback:after,
     padding: 10px 1.563em;
   }
 
-  /* line 67, scss/_largebreak.scss */
+  /* line 69, scss/_largebreak.scss */
   #sidebar-subsidiary .widget {
     float: left;
     width: 22.04724%;
@@ -1466,58 +1467,58 @@ li.comment:after, li.pingback:after, li.trackback:after,
     color: #333;
     font-size: 0.875em;
   }
-  /* line 72, scss/_largebreak.scss */
+  /* line 74, scss/_largebreak.scss */
   #sidebar-subsidiary .widget:first-child {
     margin-right: 0;
   }
 
-  /* line 80, scss/_largebreak.scss */
+  /* line 82, scss/_largebreak.scss */
   #footer .copyright {
     float: left;
     width: 49%;
     text-align: left;
   }
-  /* line 85, scss/_largebreak.scss */
+  /* line 87, scss/_largebreak.scss */
   #footer .credit {
     float: right;
     width: 49%;
     text-align: right;
   }
 
-  /* line 94, scss/_largebreak.scss */
+  /* line 96, scss/_largebreak.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 98, scss/_largebreak.scss */
+  /* line 100, scss/_largebreak.scss */
   #menu-primary ul {
     text-align: center;
   }
 
-  /* line 102, scss/_largebreak.scss */
+  /* line 104, scss/_largebreak.scss */
   #menu-primary .menu-items {
     zoom: 1;
   }
 
-  /* line 107, scss/_largebreak.scss */
+  /* line 109, scss/_largebreak.scss */
   #menu-primary .menu-items::before,
   #menu-primary .menu-items::after {
     content: "";
     display: table;
   }
 
-  /* line 112, scss/_largebreak.scss */
+  /* line 114, scss/_largebreak.scss */
   #menu-primary .menu-items::after {
     clear: both;
   }
 
-  /* line 116, scss/_largebreak.scss */
+  /* line 118, scss/_largebreak.scss */
   #menu-primary .menu-items > ul {
     width: 100%;
     margin: 60px auto;
   }
 
-  /* line 121, scss/_largebreak.scss */
+  /* line 123, scss/_largebreak.scss */
   #menu-primary ul ul {
     position: absolute;
     z-index: 1;
@@ -1527,20 +1528,20 @@ li.comment:after, li.pingback:after, li.trackback:after,
     text-align: left;
   }
 
-  /* line 130, scss/_largebreak.scss */
+  /* line 132, scss/_largebreak.scss */
   #menu-primary li:hover > ul {
     visibility: visible;
     margin: 0;
   }
 
-  /* line 135, scss/_largebreak.scss */
+  /* line 137, scss/_largebreak.scss */
   #menu-primary ul ul ul {
     top: 0;
     left: 230px;
     margin: 0 0 0 20px;
   }
 
-  /* line 141, scss/_largebreak.scss */
+  /* line 143, scss/_largebreak.scss */
   #menu-primary li {
     position: relative;
     float: left;

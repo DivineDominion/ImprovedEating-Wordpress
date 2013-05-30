@@ -32,11 +32,13 @@
     padding:    0;
     @include rem-fallback(margin-left, $content-gutter);
     a {
+        background-image: url('images/logo.png');
         background-size: 100%;
-        width: 600px;
-        height: 819px / 600px * 93px;
+        width: 530px;
+        height: 61px;
     }
 }
+
 #site-description {
     clear:      left;
     float:      left;
