@@ -1425,8 +1425,8 @@ li.comment:after, li.pingback:after, li.trackback:after,
   #site-title a {
     background-image: url("images/logo.png");
     background-size: 100%;
-    width: 530px;
-    height: 61px;
+    width: 564px;
+    height: 65px;
   }
 
   /* line 42, scss/_largebreak.scss */
