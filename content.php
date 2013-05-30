@@ -4,7 +4,7 @@
 
 		<header class="entry-header">
 			<h1 class="entry-title"><?php single_post_title(); ?></h1>
-			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'seamless' ) . '</div>' ); ?>
+			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( 'von [entry-author], [entry-published][entry-terms before=". Abgelegt in " taxonomy="category"] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'seamless' ) . '</div>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
@@ -12,15 +12,11 @@
 			<?php wp_link_pages( array( 'before' => '<p class="page-links">' . '<span class="before">' . __( 'Pages:', 'seamless' ) . '</span>', 'after' => '</p>' ) ); ?>
 		</div><!-- .entry-content -->
 
-		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[entry-terms before="Posted in " taxonomy="category"] [entry-terms before="| Tagged "]', 'seamless' ) . '</div>' ); ?>
-		</footer><!-- .entry-footer -->
-
 	<?php } else { ?>
 
 		<header class="entry-header">
 			<?php the_title( '<h2 class="entry-title"><a href="' . get_permalink() . '">', '</a></h2>' ); ?>
-			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'seamless' ) . '</div>' ); ?>
+			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( 'von [entry-author], [entry-published][entry-terms before=". Abgelegt in " taxonomy="category"]', 'seamless' ) . '</div>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-summary">
@@ -29,10 +25,11 @@
 			<?php wp_link_pages( array( 'before' => '<p class="page-links">' . '<span class="before">' . __( 'Pages:', 'seamless' ) . '</span>', 'after' => '</p>' ) ); ?>
 		</div><!-- .entry-summary -->
 
-		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[entry-terms before="Posted in " taxonomy="category"] [entry-terms before="| Tagged "]', 'seamless' ) . '</div>' ); ?>
-		</footer><!-- .entry-footer -->
-
 	<?php } ?>
+    
+	<footer class="entry-footer">
+		<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[entry-comments-link] [entry-edit-link before=" | "] [entry-terms before=" | Tags: "] ', 'seamless' ) . '</div>' ); ?>
+	</footer><!-- .entry-footer -->
+    
 
 </article><!-- .hentry -->
