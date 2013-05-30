@@ -84,6 +84,7 @@ h1 {
 h2 {
     font-size: 23px;
     font-size: 1.438rem;
+    font-weight: bold;
 }
 
 h3 {
@@ -517,6 +518,7 @@ li.comment .avatar {
 #content {
     width: 100%;
     background: $white;
+    padding-top: 1.563em;
 }
 
 #sidebar-primary {
@@ -834,7 +836,6 @@ p video {
 }
 
 .loop-title {
-    margin-top: 1em;
     font-size: 28px;
     font-size: 1.8rem;
     color:     #050505;

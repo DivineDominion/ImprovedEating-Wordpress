@@ -14,7 +14,8 @@
 }
 
 #content { 
-    @include rem-fallback(padding, 0, $content-gutter);
+    @include rem-fallback(padding-left, $content-gutter);
+    @include rem-fallback(padding-right, $content-gutter);
 }
 
 #sidebar-primary {
