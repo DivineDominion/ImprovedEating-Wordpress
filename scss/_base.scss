@@ -58,7 +58,8 @@ a {
     }
 }
 
-#content a:hover {
+#content .entry-summary a:hover,
+#content .entry-content a:hover {
     background:      $special-link-hover-bg;
     color:           $special-link-hover;
     text-decoration: none;
@@ -628,11 +629,11 @@ li.comment .avatar {
 .entry-title {
     word-wrap:  break-word;
     color:      #4A4A4A;
-    font-size:  48px;
-    font-size:  3.001rem;
+    font-size:  44px;
+    font-size:  2.75rem;
     font-weight: bold;
     font-family: $post_title;
-    line-height: 1.0;
+    line-height: 1.0em;
     a {
         color:   #4A4A4A;
         text-decoration: none;
@@ -640,6 +641,7 @@ li.comment .avatar {
         &:hover {
             color:           #606060;
             text-decoration: none;
+            background-color: transparent;
         }   
     }
 }
