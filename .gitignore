@@ -1,3 +1,4 @@
 sass
 config.rb
+deploy.sh
 .sass-cache
