@@ -93,8 +93,6 @@ ol.comment-list ol.children {
 }
 
 #menu-primary ul {
-    list-style: none;
-    margin:     0;
     text-align: center;
 }
 
@@ -141,49 +139,4 @@ ol.comment-list ol.children {
     position: relative;
     float:    left;
     display:  inline-block;
-}
-
-#menu-primary li a {
-    display:         inline-block;
-    padding:         12px 20px;
-    border-bottom:   none;
-    color:           #444444;
-    text-decoration: none;
-}
-
-#menu-primary li a:hover, 
-#menu-primary li:hover > a {
-    background: #d5d5d5;
-}
-#menu-primary li a:hover,
-#menu-primary li:hover > a,
-#menu-primary li.current-menu-item > a {
-    color: #222222;
-}
-
-#menu-primary li li.current-menu-item > a {
-    color: #000000;
-}
-
-#menu-primary li li a {
-    background: #d5d5d5;
-    color:      #000000;
-    font-size:  1rem;
-}
-
-#menu-primary li li a:hover,
-#menu-primary li li:hover > a {
-    background: #c5c5c5;
-    color:      #000000;
-}
-
-#menu-primary ul ul li {
-    display: block;
-    float: none;
-}
-
-#menu-primary ul ul li a {
-    display: block;
-    float:   none;
-    width:   190px;
 }
