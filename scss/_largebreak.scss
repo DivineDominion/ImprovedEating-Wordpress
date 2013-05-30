@@ -29,7 +29,13 @@
 #site-title {
     float:      left;
     text-align: left;
+    padding:    0;
     @include rem-fallback(margin-left, $content-gutter);
+    a {
+        background-size: 100%;
+        width: 600px;
+        height: 819px / 600px * 93px;
+    }
 }
 #site-description {
     clear:      left;
@@ -39,9 +45,6 @@
 
 // Respond/Comments
 
-#comments {
-    margin:     0 0 3.125em;
-}
 .comment-text {
     padding: 1.563em 1.563em 0 1.563em;
 }

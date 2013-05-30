@@ -4,8 +4,10 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 	return;
 ?>
 
-<section id="comments">
 
+<section id="comments">
+    <hr/>
+    
 	<?php get_template_part( 'comments-loop' ); // Loads the comments-loop.php template. ?>
 
 	<?php comment_form(); // Loads the comment form. ?>

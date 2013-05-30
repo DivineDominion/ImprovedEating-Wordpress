@@ -504,13 +504,13 @@ li.comment .avatar {
     margin:     auto;
 }
 #header {
-    margin: 2em 0;
+    margin-top: 2em;
 }
 
 #menu-primary {
     clear:      both;
     display:    block;
-    margin:     1.563em 0;
+    margin:     0 0 1.563em;
     text-align: left;
 }
 
@@ -519,7 +519,8 @@ li.comment .avatar {
 #content {
     width: 100%;
     background: $white;
-    padding-top: 1.563em;
+    padding-top: 3.26em;
+    padding-bottom: 1.563em;
 }
 
 #sidebar-primary {
@@ -549,18 +550,18 @@ li.comment .avatar {
 }
 
 #site-title {
-    margin:      0 0 0.750rem 0;
+    margin:      0;
     text-align:  center;
     font-size:   40px;
     font-size:   2.5rem;
     padding: 0 10px;
     a {
-        background: url('images/logo.png') top left no-repeat;
+        background: url('images/logo@2x.png') top left no-repeat;
         background-size: contain;
         display: inline-block;
         width: 100%;
-        max-width: 411px;
-        height: 49px;
+        max-width: 819px;
+        max-height: 93px;
         
         outline: none;;
         overflow: hidden;
@@ -615,10 +616,7 @@ li.comment .avatar {
 .hentry,
 .attachment-meta {
     margin:     0 0 0.938em;
-    padding:    1.250em 0;
     background: $white;
-    font-size:  17px;
-    font-size:  1.0625rem;
 }
 .sticky {
     padding:    1.563em;
@@ -839,7 +837,8 @@ p video {
 .loop-title {
     font-size: 28px;
     font-size: 1.8rem;
-    color:     #050505;
+    color:     #AAAAAF;
+    font-weight: bold;
 }
 
 .loop-description {
@@ -897,7 +896,6 @@ p video {
 .loop-pagination,
 .loop-nav {
     clear:       both;
-    margin:      0 0 3.125em;
 }
 
 .page-numbers,
@@ -1057,12 +1055,13 @@ a.page-numbers:hover,
 
 #comments {
     position:   relative;
-    margin:     0 0 1.563em;
-    padding:    2.500em 0px 1.563em 0px;
-    border-top: 5px solid #e5e5e5;
+    margin-top: 2em;
     background: $white;
-    font-size:  17px;
-    font-size:  1.0625rem;
+}
+
+#comments hr {
+    border: 0 solid transparent;
+    border-top: 5px solid #e5e5e5;
 }
 
 // Comments closed message
