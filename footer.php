@@ -11,7 +11,10 @@
 			<div class="wrap">
 
 				<div class="footer-content">
-					<?php echo apply_atomic_shortcode( 'footer_content', '<p class="copyright">' . __( 'Copyright &copy; [the-year] [site-link].', 'seamless' ) . '</p>' . '<p class="credit">' . __( 'Powered by [wp-link] and [theme-link].', 'seamless' ) . '</p>' ); ?>
+                    <small class="license">
+                        <?php echo apply_atomic_shortcode( 'footer_content', '<p class="copyright">' . __( 'Except where otherwise noted, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons &mdash; Attribution-ShareAlike 3.0 Unported
+					  &mdash; CC BY-SA 3.0">Creative Commons Attribution-ShareAlike 3.0 License</a>. [the-year] [site-link].', 'seamless' ) . '</p>' . '<p class="credit">' . __( 'Powered by [wp-link] and [theme-link].', 'seamless' ) . '</p>' ); ?>
+                  </small>
 				</div><!-- .footer-content -->
 
 			</div>
