@@ -364,7 +364,7 @@ img {
     height:     auto;
 }
 
-a img {
+#content a img {
     padding:    0.938em;
     background: #f5f5f5;
     border:     1px solid #e5e5e5;
@@ -1049,6 +1049,15 @@ a.page-numbers:hover,
     }
 }
 
+.cta {
+    color: #F9F2E7;
+    background: #00A8C6;
+    font-size: 1.2em;
+    padding: 0.6em 1em;
+    
+    a { color: #AEE239; }
+}
+
 // ==========================================================================
 // Comments Template
 // ==========================================================================
@@ -1240,7 +1249,7 @@ li.bypostauthor > .comment-text {
         }
     }
 }
-
+  
 @media only screen and (max-width: 45em) {
 
     // Primary Menu
@@ -1275,8 +1284,6 @@ li.bypostauthor > .comment-text {
         text-align: left;
     }
 }
-
-
 
 #menu-primary ul {
     list-style: none;
