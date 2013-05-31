@@ -13,17 +13,20 @@ end
 
 desc "Compile SASS to CSS"
 task :css do
+  puts "Compiling SASS ..."
   system 'compass compile -e production'
 end
 
 desc "Minify CSS Output"
 task :minify => [:css] do
+  puts "Minifying CSS ..."
   system 'sass style.css:style.min.css --style compressed --scss'
 end
 
 desc "Deploy"
 task :deploy => [:css, :minify] do
-  system 'deploy.sh'
+  puts "Deploying ..."
+  system 'bash deploy.sh'
 end
 
 task :default => [:watch]
