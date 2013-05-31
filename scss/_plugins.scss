@@ -2,14 +2,12 @@
  * Multi-Language Switcher 
  */
 
-.widget_mslswidget {
-  .widget-title {
-    margin-bottom: 0;
-    font-weight: normal;
-  }
-  
-  ul {
-    list-style: none;
-    margin-left: 0;
-  }
+.widget_mslswidget .widget-title {
+  margin-bottom: 0;
+  font-weight: normal;
+}  
+
+.sidebar .widget.widget_mslswidget ul {
+  list-style: none;
+  margin-left: 0;
 }
