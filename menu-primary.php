@@ -1,7 +1,10 @@
 <?php if ( has_nav_menu( 'primary' ) ) {
     $lang = "";
     if (function_exists("the_msls")) {
-        $lang = the_msls();
+        ob_start();
+        the_msls();
+        $lang = ob_get_contents();
+        ob_end_clean();
     }
     
 	wp_nav_menu(
