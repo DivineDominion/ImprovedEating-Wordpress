@@ -324,7 +324,7 @@ function improvedtheming_trackbacks_args() {
     $args = array(
         'style'        => 'ol',
         'type'         => 'pings',
-        'avatar_size'  => 80,
+        'avatar_size'  => 0,
         'callback'     => 'hybrid_comments_callback',
         'end-callback' => 'hybrid_comments_end_callback'
     );
