@@ -2,3 +2,4 @@ sass
 config.rb
 deploy.sh
 .sass-cache
+style.min.css
