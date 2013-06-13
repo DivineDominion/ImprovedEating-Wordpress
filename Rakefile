@@ -1,7 +1,13 @@
 #!/usr/bin/env ruby
 
+desc "Clean theme folder"
+task :clean do
+  puts "Removes old minification "
+  system 'rm style.min.css 2>/dev/null'
+end
+
 desc "Watch SASS and compile"
-task :watch do
+task :watch => [:clean] do
   compassPid = Process.spawn('compass watch -e development')  
   
   trap("INT") {
@@ -12,7 +18,7 @@ task :watch do
 end
 
 desc "Compile SASS to CSS"
-task :css do
+task :css => [:clean] do
   puts "Compiling SASS ..."
   system 'compass compile -e production'
 end
@@ -24,7 +30,7 @@ task :minify => [:css] do
 end
 
 desc "Deploy"
-task :deploy => [:css, :minify] do
+task :deploy => [:clean, :css, :minify] do
   puts "Deploying ..."
   system 'bash deploy.sh'
 end
