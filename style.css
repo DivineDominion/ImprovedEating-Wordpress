@@ -391,24 +391,25 @@ img {
   height: auto;
 }
 
-/* line 367, scss/_base.scss */
+/*
+TODO decide to remove: it fucks up comment avatar styles
 #content a img {
-  padding: 0.938em;
-  background: #f5f5f5;
-  border: 1px solid #e5e5e5;
+    padding:    0.938em;
+    background: #f5f5f5;
+    border:     1px solid #e5e5e5;
+    &.size-large,
+    &.size-full {
+        padding: 0.938em;
+    }
 }
-/* line 372, scss/_base.scss */
-#content a img.size-large, #content a img.size-full {
-  padding: 0.938em;
-}
-
-/* line 377, scss/_base.scss */
+*/
+/* line 380, scss/_base.scss */
 #content a:hover img {
   background: #efefef;
   border: 1px solid #d5d5d5;
 }
 
-/* line 385, scss/_base.scss */
+/* line 388, scss/_base.scss */
 .thumbnail,
 .post-thumbnail {
   float: right;
@@ -417,12 +418,12 @@ img {
   margin: 0 0 1.563em 1.563em;
 }
 
-/* line 394, scss/_base.scss */
+/* line 397, scss/_base.scss */
 .wp-caption {
   max-width: 100%;
 }
 
-/* line 398, scss/_base.scss */
+/* line 401, scss/_base.scss */
 .wp-caption-text {
   margin: 0;
   padding: 0 1.563em;
@@ -432,46 +433,46 @@ img {
   font-style: italic;
   color: #959595;
 }
-/* line 406, scss/_base.scss */
+/* line 409, scss/_base.scss */
 .wp-caption-text a {
   border-bottom: 1px solid transparent;
   font-style: normal;
   font-size: 18px;
   font-size: 1.125rem;
 }
-/* line 411, scss/_base.scss */
+/* line 414, scss/_base.scss */
 .wp-caption-text a:hover {
   border-bottom: 1px solid #d5d5d5;
   background: #e5e5e5;
   text-decoration: none;
 }
 
-/* line 421, scss/_base.scss */
+/* line 424, scss/_base.scss */
 .gallery {
   margin: 0 0 1.250em !important;
 }
 
-/* line 425, scss/_base.scss */
+/* line 428, scss/_base.scss */
 .gallery .gallery-item {
   margin-bottom: 5px;
 }
 
-/* line 429, scss/_base.scss */
+/* line 432, scss/_base.scss */
 .gallery-icon {
   margin-bottom: 0.313em;
 }
 
-/* line 433, scss/_base.scss */
+/* line 436, scss/_base.scss */
 .gallery .gallery-icon img {
   margin: 0;
 }
 
-/* line 437, scss/_base.scss */
+/* line 440, scss/_base.scss */
 .gallery .gallery-item .gallery-icon img {
   padding: 0.313em;
 }
 
-/* line 441, scss/_base.scss */
+/* line 444, scss/_base.scss */
 .gallery .gallery-caption {
   margin-bottom: 0.313em;
   font-size: 15px;
@@ -479,37 +480,32 @@ img {
   color: #959595;
 }
 
-/* line 450, scss/_base.scss */
+/* line 453, scss/_base.scss */
 .gallery .col-1 .gallery-icon img,
 .gallery .col-2 .gallery-icon img,
 .gallery .col-3 .gallery-icon img {
   padding: 0.938em;
 }
 
-/* line 456, scss/_base.scss */
+/* line 459, scss/_base.scss */
 .gallery .col-4 .gallery-icon img,
 .gallery .col-5 .gallery-icon img,
 .gallery .col-6 .gallery-icon img {
   padding: 0.625em;
 }
 
-/* line 460, scss/_base.scss */
+/* line 463, scss/_base.scss */
 .singular-attachment .gallery-caption {
   display: none;
 }
 
-/* line 466, scss/_base.scss */
+/* line 469, scss/_base.scss */
 .avatar {
   width: 80px;
   height: 80px;
   padding: 0.563em;
   border: 1px solid #efefef;
   background: #f5f5f5;
-}
-
-/* line 473, scss/_base.scss */
-a .avatar {
-  border-color: #e5e5e5;
 }
 
 /* line 477, scss/_base.scss */
@@ -1126,48 +1122,55 @@ a.page-numbers:hover,
 }
 
 /* line 1088, scss/_base.scss */
-ol.comment-list {
-  margin: 0 0 1.563em;
+.comment-list {
+  margin: 0 0 1.563em 0;
   list-style: none;
 }
 /* line 1091, scss/_base.scss */
-ol.comment-list ol.children {
-  border-left: 1px solid #efefef;
-  margin: -1.563em 0 0 0.750em;
-  padding: 1.563em 0 0 0.750em;
+.comment-list ol.children {
+  border-left: 10px solid whitesmoke;
+  margin-left: 1px;
+  /* 1px border separation */
+  padding: 1.563em 0 0 0.5em;
   list-style: none;
 }
 
-/* line 1102, scss/_base.scss */
-li.comment,
-li.ping {
-  clear: both;
+/* line 1099, scss/_base.scss */
+.trackbacks {
+  list-style: none;
 }
 
 /* line 1106, scss/_base.scss */
+.comment,
+.ping {
+  clear: both;
+  margin-bottom: 1.563em;
+}
+
+/* line 1111, scss/_base.scss */
 li.ping {
   margin: 0 0 1.563em;
   padding: 1.563em 1.563em 0;
   border: 1px solid #efefef;
   background: #f5f5f5;
 }
-/* line 1112, scss/_base.scss */
+/* line 1117, scss/_base.scss */
 li.ping li.ping .avatar {
   float: right;
   margin: 0 0 1.563em 1.563em;
 }
 
-/* line 1120, scss/_base.scss */
+/* line 1125, scss/_base.scss */
 .comment-meta {
   padding: 0.750em 0 0;
   margin: 0 0 1.563em;
 }
 
-/* line 1125, scss/_base.scss */
+/* line 1130, scss/_base.scss */
 .comment-author {
   display: block;
 }
-/* line 1127, scss/_base.scss */
+/* line 1132, scss/_base.scss */
 .comment-author cite {
   font-size: 17px;
   font-size: 1.0625rem;
@@ -1175,27 +1178,27 @@ li.ping li.ping .avatar {
   color: #656565;
 }
 
-/* line 1137, scss/_base.scss */
+/* line 1142, scss/_base.scss */
 .comment-text {
   clear: left;
-  margin: 0 0 20px;
   padding: 1.563em 0.750em 0 0.750em;
-  border: 1px solid #efefef;
+  border: 1px solid transparent;
+  /* fixes padding-bottom ignorance*/
   word-wrap: break-word;
-}
-
-/* line 1145, scss/_base.scss */
-li.bypostauthor > .comment-text {
-  border-color: #e5e5e5;
   background: #f5f5f5;
 }
 
-/* line 1152, scss/_base.scss */
+/* line 1150, scss/_base.scss */
+li.bypostauthor > .comment-text {
+  background: #f5f5fa;
+}
+
+/* line 1156, scss/_base.scss */
 .comment-reply-link {
   position: relative;
   display: inline-block;
   float: right;
-  margin: -1.563em 0.625em 1.563em 0;
+  margin: -2.4em 0.625em 0 0;
   padding: 0.313em 1.563em;
   font-size: 13px;
   font-size: 0.8125rem;
@@ -1204,37 +1207,37 @@ li.bypostauthor > .comment-text {
   background: #e5e5e5;
   text-align: center;
 }
-/* line 1164, scss/_base.scss */
+/* line 1168, scss/_base.scss */
 .comment-reply-link:hover {
   background: #d5d5d5;
   text-decoration: none;
 }
 
-/* line 1173, scss/_base.scss */
+/* line 1177, scss/_base.scss */
 #respond .log-in-out {
   color: #959595;
 }
-/* line 1175, scss/_base.scss */
+/* line 1179, scss/_base.scss */
 #respond .log-in-out a {
   font-size: 17px;
   font-size: 1.0625rem;
   font-style: normal;
 }
-/* line 1181, scss/_base.scss */
+/* line 1185, scss/_base.scss */
 #respond label {
   font-size: 15px;
   font-size: 0.9375rem;
   font-style: italic;
   color: #959595;
 }
-/* line 1186, scss/_base.scss */
+/* line 1190, scss/_base.scss */
 #respond label .required {
   font-size: 17px;
   font-size: 1.0625rem;
   font-weight: bold;
   color: #cb5700;
 }
-/* line 1194, scss/_base.scss */
+/* line 1198, scss/_base.scss */
 #respond input,
 #respond textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1244,38 +1247,38 @@ li.bypostauthor > .comment-text {
   background: #e5e5e5;
   border: 1px solid #d5d5d5;
 }
-/* line 1201, scss/_base.scss */
+/* line 1205, scss/_base.scss */
 #respond input:focus,
 #respond textarea:focus {
   color: #454545;
   background: #f5f5f5;
   border-color: #e5e5e5;
 }
-/* line 1209, scss/_base.scss */
+/* line 1213, scss/_base.scss */
 #respond input[type="text"],
 #respond input[type="password"],
 #respond input[type="email"] {
   width: 100%;
   min-width: 100%;
 }
-/* line 1213, scss/_base.scss */
+/* line 1217, scss/_base.scss */
 #respond input[type="submit"] {
   padding: 0.750em 1.250em;
 }
-/* line 1216, scss/_base.scss */
+/* line 1220, scss/_base.scss */
 #respond textarea {
   width: 100%;
   padding: 1.250em;
 }
 
-/* line 1222, scss/_base.scss */
+/* line 1226, scss/_base.scss */
 #reply-title small {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
   font-size: 1.0625rem;
 }
 
-/* line 1233, scss/_base.scss */
+/* line 1237, scss/_base.scss */
 #footer .copyright {
   float: left;
   text-align: center;
@@ -1283,7 +1286,7 @@ li.bypostauthor > .comment-text {
   padding: 0.938em 0;
   margin: 0;
 }
-/* line 1240, scss/_base.scss */
+/* line 1244, scss/_base.scss */
 #footer .credit {
   float: left;
   text-align: center;
@@ -1293,12 +1296,12 @@ li.bypostauthor > .comment-text {
 }
 
 @media only screen and (max-width: 45em) {
-  /* line 1257, scss/_base.scss */
+  /* line 1261, scss/_base.scss */
   #menu-primary {
     text-align: center;
   }
 
-  /* line 1260, scss/_base.scss */
+  /* line 1264, scss/_base.scss */
   .menu-toggle {
     position: relative;
     display: inline-block;
@@ -1308,7 +1311,7 @@ li.bypostauthor > .comment-text {
     font-size: 0.9375rem;
   }
 
-  /* line 1270, scss/_base.scss */
+  /* line 1274, scss/_base.scss */
   .menu-toggle:hover,
   .menu-toggle.active {
     color: black;
@@ -1316,7 +1319,7 @@ li.bypostauthor > .comment-text {
     background-position: 0 -21px;
   }
 
-  /* line 1276, scss/_base.scss */
+  /* line 1280, scss/_base.scss */
   #menu-primary .wrap {
     position: relative;
     z-index: 999;
@@ -1328,13 +1331,13 @@ li.bypostauthor > .comment-text {
     text-align: left;
   }
 }
-/* line 1288, scss/_base.scss */
+/* line 1292, scss/_base.scss */
 #menu-primary ul {
   list-style: none;
   margin: 0;
 }
 
-/* line 1293, scss/_base.scss */
+/* line 1297, scss/_base.scss */
 #menu-primary li a {
   display: inline-block;
   color: #16B4CD;
@@ -1345,13 +1348,13 @@ li.bypostauthor > .comment-text {
   text-shadow: 0 1px 0 #f2f2f2;
 }
 
-/* line 1304, scss/_base.scss */
+/* line 1308, scss/_base.scss */
 #menu-primary li a:hover,
 #menu-primary li.current-menu-item > a {
   color: #222222;
 }
 
-/* line 1325, scss/_base.scss */
+/* line 1329, scss/_base.scss */
 .clearfix:after,
 #container:after,
 #header:after,
@@ -1468,18 +1471,7 @@ li.comment:after, li.pingback:after, li.trackback:after,
     float: left;
   }
 
-  /* line 54, scss/_largebreak.scss */
-  .comment-text {
-    padding: 1.563em 1.563em 0 1.563em;
-  }
-
-  /* line 57, scss/_largebreak.scss */
-  ol.comment-list ol.children {
-    margin: -1.563em 0 0 1.563em;
-    padding: 1.563em 0 0 1.563em;
-  }
-
-  /* line 64, scss/_largebreak.scss */
+  /* line 56, scss/_largebreak.scss */
   #respond input[type="text"],
   #respond input[type="password"],
   #respond input[type="email"] {
@@ -1489,7 +1481,7 @@ li.comment:after, li.pingback:after, li.trackback:after,
     padding: 10px 1.563em;
   }
 
-  /* line 73, scss/_largebreak.scss */
+  /* line 65, scss/_largebreak.scss */
   #sidebar-subsidiary .widget {
     float: left;
     width: 22.04724%;
@@ -1499,58 +1491,58 @@ li.comment:after, li.pingback:after, li.trackback:after,
     color: #333;
     font-size: 0.875em;
   }
-  /* line 78, scss/_largebreak.scss */
+  /* line 70, scss/_largebreak.scss */
   #sidebar-subsidiary .widget:first-child {
     margin-right: 0;
   }
 
-  /* line 86, scss/_largebreak.scss */
+  /* line 78, scss/_largebreak.scss */
   #footer .copyright {
     float: left;
     width: 49%;
     text-align: left;
   }
-  /* line 91, scss/_largebreak.scss */
+  /* line 83, scss/_largebreak.scss */
   #footer .credit {
     float: right;
     width: 49%;
     text-align: right;
   }
 
-  /* line 100, scss/_largebreak.scss */
+  /* line 92, scss/_largebreak.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 104, scss/_largebreak.scss */
+  /* line 96, scss/_largebreak.scss */
   #menu-primary ul {
     text-align: center;
   }
 
-  /* line 108, scss/_largebreak.scss */
+  /* line 100, scss/_largebreak.scss */
   #menu-primary .menu-items {
     zoom: 1;
   }
 
-  /* line 113, scss/_largebreak.scss */
+  /* line 105, scss/_largebreak.scss */
   #menu-primary .menu-items::before,
   #menu-primary .menu-items::after {
     content: "";
     display: table;
   }
 
-  /* line 118, scss/_largebreak.scss */
+  /* line 110, scss/_largebreak.scss */
   #menu-primary .menu-items::after {
     clear: both;
   }
 
-  /* line 122, scss/_largebreak.scss */
+  /* line 114, scss/_largebreak.scss */
   #menu-primary .menu-items > ul {
     width: 100%;
     margin: 60px auto;
   }
 
-  /* line 127, scss/_largebreak.scss */
+  /* line 119, scss/_largebreak.scss */
   #menu-primary ul ul {
     position: absolute;
     z-index: 1;
@@ -1560,20 +1552,20 @@ li.comment:after, li.pingback:after, li.trackback:after,
     text-align: left;
   }
 
-  /* line 136, scss/_largebreak.scss */
+  /* line 128, scss/_largebreak.scss */
   #menu-primary li:hover > ul {
     visibility: visible;
     margin: 0;
   }
 
-  /* line 141, scss/_largebreak.scss */
+  /* line 133, scss/_largebreak.scss */
   #menu-primary ul ul ul {
     top: 0;
     left: 230px;
     margin: 0 0 0 20px;
   }
 
-  /* line 147, scss/_largebreak.scss */
+  /* line 139, scss/_largebreak.scss */
   #menu-primary li {
     position: relative;
     float: left;

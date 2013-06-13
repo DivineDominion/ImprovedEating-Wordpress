@@ -364,6 +364,8 @@ img {
     height:     auto;
 }
 
+/*
+TODO decide to remove: it fucks up comment avatar styles
 #content a img {
     padding:    0.938em;
     background: #f5f5f5;
@@ -373,6 +375,7 @@ img {
         padding: 0.938em;
     }
 }
+*/
 
 #content a:hover img {
     background: #efefef;
@@ -469,9 +472,6 @@ img {
     padding:    0.563em;
     border:     1px solid #efefef;
     background: #f5f5f5;
-}
-a .avatar {
-    border-color: #e5e5e5;
 }
 
 a:hover .avatar {
@@ -1085,22 +1085,27 @@ a.page-numbers:hover,
 
 // Comment list
 
-ol.comment-list {
-    margin:     0 0 1.563em;
+.comment-list {
+    margin:     0 0 1.563em 0;
     list-style: none;
     ol.children {
-        border-left: 1px solid #efefef;
-        margin:      -1.563em 0 0 0.750em;
-        padding:     1.563em 0 0 0.750em;
+        border-left: 10px solid $comments-color;
+        margin-left: 1px; /* 1px border separation */
+        padding:     1.563em 0 0 0.5em;
         list-style:  none;
     }
 }
 
+.trackbacks {
+  list-style: none;
+}
+
 // Individual comments
 
-li.comment,
-li.ping {
+.comment,
+.ping {
     clear: both;
+    margin-bottom: 1.563em;
 }
 
 li.ping {
@@ -1136,15 +1141,14 @@ li.ping {
 
 .comment-text {
     clear:     left;
-    margin:    0 0 20px;
     padding:   1.563em 0.750em 0 0.750em;
-    border:    1px solid #efefef;
+    border: 1px solid transparent; /* fixes padding-bottom ignorance*/
     word-wrap: break-word;
+    background: #f5f5f5;
 }
 
 li.bypostauthor > .comment-text {
-    border-color: #e5e5e5;
-    background:   #f5f5f5;
+    background:   #f5f5fa;
 }
 
 // Reply link
@@ -1153,7 +1157,7 @@ li.bypostauthor > .comment-text {
     position:   relative;
     display:    inline-block;
     float:      right;
-    margin:     -1.563em 0.625em 1.563em 0;
+    margin:     -2.4em 0.625em 0 0;
     padding:    0.313em 1.563em;
     font-size:  13px;
     font-size:  0.8125rem;

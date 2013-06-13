@@ -5,9 +5,13 @@
 	<?php get_template_part( 'comments-loop-nav' ); // Loads the comment-loop-nav.php template. ?>
 
 	<ol class="comment-list">
-		<?php wp_list_comments( hybrid_list_comments_args() ); ?>
+		<?php wp_list_comments( improvedtheming_comments_args() ); ?>
 	</ol><!-- .comment-list -->
 
+    <ol class="trackback-list">
+        <?php wp_list_comments( improvedtheming_trackbacks_args() ); ?>
+    </ol>
+    
 <?php } // End check for comments. ?>
 
 <?php get_template_part( 'comments-loop-error' ); // Loads the comments-loop-error.php template. ?>

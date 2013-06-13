@@ -318,4 +318,34 @@ function seamless_embed_html( $html ) {
 // Deactivates JetPack plugin OpenGraph stuff
 remove_action( 'wp_head', 'jetpack_og_tags' );
 
+function improvedtheming_trackbacks_args() {
+    // cf. hybrid_list_comments_args()
+    
+    $args = array(
+        'style'        => 'ol',
+        'type'         => 'pings',
+        'avatar_size'  => 80,
+        'callback'     => 'hybrid_comments_callback',
+        'end-callback' => 'hybrid_comments_end_callback'
+    );
+
+    /* Return the arguments and allow devs to overwrite them. */
+    return apply_atomic( 'list_comments_args', $args );
+}
+
+function improvedtheming_comments_args() {
+    // cf. hybrid_list_comments_args()
+    
+    $args = array(
+        'style'        => 'ol',
+        'type'         => 'comment',
+        'avatar_size'  => 80,
+        'callback'     => 'hybrid_comments_callback',
+        'end-callback' => 'hybrid_comments_end_callback'
+    );
+
+    /* Return the arguments and allow devs to overwrite them. */
+    return apply_atomic( 'list_comments_args', $args );
+}
+
 ?>
