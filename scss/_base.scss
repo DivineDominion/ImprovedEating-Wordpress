@@ -1096,28 +1096,20 @@ a.page-numbers:hover,
     }
 }
 
-.trackback-list {
-  list-style: none;
+.pingback-list {
 }
+
+.pingback-text p:last-child { margin-bottom: 0; }
 
 // Individual comments
 
 .comment,
 .ping {
     clear: both;
-    margin-bottom: 1.563em;
 }
 
-li.ping {
-    margin:     0 0 1.563em;
-    padding:    1.563em 1.563em 0;
-    border:     1px solid #efefef;
-    background: #f5f5f5;
-    // Avatars
-    li.ping .avatar {
-        float:  right;
-        margin: 0 0 1.563em 1.563em;
-    }
+.comment {
+    margin-bottom: 1.563em;
 }
 
 // Meta

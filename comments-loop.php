@@ -6,8 +6,10 @@
 
 	<ol class="comment-list">
 		<?php wp_list_comments( improvedtheming_comments_args() ); ?>
-	</ol><!-- .comment-list -->
+	</ol>
 
+    <h3>Links von anderen Websites</h3>
+    
     <ol class="trackback-list">
         <?php wp_list_comments( improvedtheming_trackbacks_args() ); ?>
     </ol>
