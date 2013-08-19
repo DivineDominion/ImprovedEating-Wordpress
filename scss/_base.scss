@@ -495,7 +495,7 @@ li.comment .avatar {
 
 #menu-primary,
 #content,
-#sidebar-primary {
+.sidebar {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -523,7 +523,7 @@ li.comment .avatar {
     padding-bottom: 1.563em;
 }
 
-#sidebar-primary {
+.sidebar {
   width:   100%;
   padding-top: 1.563em;
   background: #EAEAEA;
@@ -1019,6 +1019,7 @@ a.page-numbers:hover,
 // ==========================================================================
 
 #sidebar-primary {}
+#newsletter { margin-bottom: 1.5em; padding-bottom: 1.563em; }
 
 // Subsidiary sidebar
 
