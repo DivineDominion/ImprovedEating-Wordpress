@@ -39,5 +39,3 @@
 		<?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
 
 		<div id="main">
-
-			<?php if ( false && current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail( array( 'container' => 'nav', 'separator' => '>', 'before' => __( 'You are here:', 'seamless' ) ) ); ?>
