@@ -1011,7 +1011,7 @@ a.page-numbers:hover,
     }
 }
 
-.sidebar .widget ul {
+.sidebar ul {
     margin-left: 1.25em;
 }
 // ==========================================================================
@@ -1020,6 +1020,7 @@ a.page-numbers:hover,
 
 #sidebar-primary {}
 #newsletter { margin-bottom: 1.5em; padding-bottom: 1.563em; }
+@import 'newsletter';
 
 // Subsidiary sidebar
 

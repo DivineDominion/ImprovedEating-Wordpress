@@ -1,4 +1,7 @@
-            <?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
+            <?php 
+            // Loads the sidebar templates.
+            get_sidebar( 'newsletter' );
+            get_sidebar( 'primary' ); ?>
 
         </div><!-- #main -->
 

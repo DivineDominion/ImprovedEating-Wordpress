@@ -1,0 +1,40 @@
+.newsletter__wrapper { padding: 0 1.25em; }
+.newsletter__title {}
+
+.newletter__label { 
+  font-size: 0.8em; 
+  font-weight: bold; 
+  color: #666;
+  margin-bottom: 0.5em;
+}
+.newsletter__email { 
+  font-size: 1.2em;
+  padding: 0.4em 0.5em;
+  width: 100%;
+  border: 0; 
+  border-radius: 0.2em;
+  box-shadow: 0 1px 0.2em rgba(0,0,0,0.5) inset;
+  margin-bottom: 0.5em;
+}
+
+// prefix HTML to override other settings from _base.scss
+html .newsletter__button {
+  background: #2daebf url('images/alert-overlay.png') repeat-x;
+  color: #fff;
+      
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-bottom-color: rgba(0,0,0,0.25);
+  
+  cursor: pointer;
+  line-height: 1;
+  text-shadow: 0 -1px 1px #222;
+  
+  @include border-radius(5px, 5px);
+  @include box-shadow(0 1px 3px rgba(0,0,0,0.5));
+  
+  &:hover { background-color: #007d9a; border-bottom-color: inherit; }
+  &:active { top: 1px; border-bottom-color: inherit; }
+}
+
+.abo { margin-top: 25px; }
