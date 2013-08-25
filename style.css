@@ -3,7 +3,7 @@
  * Theme URI: https://github.com/DivineDominion/ImprovedEating-Wordpress
  * Description: A responsive theme built on top of Seamless and Hybrid Core.
  * Tags: light, one-column, two-columns, right-sidebar, left-sidebar, flexible-width, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
- * Version: 1.0
+ * Version: 1.2
  * Author: Christian Tietze
  * Author URI: http://christiantietze.de
  * License: GNU General Public License v2.0
@@ -31,17 +31,17 @@ body {
 }
 
 a {
-  color: #16b4cd;
+  color: #1594bc;
   text-decoration: underline;
 }
 a:hover {
-  color: #1290a4;
+  color: #107393;
 }
 
 #content .entry-summary a:hover,
 #content .entry-content a:hover {
-  background: #c4e6eb;
-  color: #1f555e;
+  background: #b6dbe7;
+  color: #010304;
   text-decoration: none;
 }
 
@@ -933,6 +933,7 @@ a.page-numbers:hover,
 html .newsletter__button {
   background: #2daebf url("images/alert-overlay.png") repeat-x;
   color: #fff;
+  position: relative;
   border-width: 0 0 1px 0;
   border-style: solid;
   border-bottom-color: rgba(0, 0, 0, 0.25);
@@ -951,8 +952,11 @@ html .newsletter__button:hover {
   border-bottom-color: inherit;
 }
 html .newsletter__button:active {
-  top: 1px;
+  top: 2px;
   border-bottom-color: inherit;
+}
+html .newsletter__button:focus {
+  outline: inherit;
 }
 
 .abo {
@@ -1157,51 +1161,55 @@ li.bypostauthor > .comment-text {
   margin: 0;
 }
 
-@media only screen and (max-width: 45em) {
-  #menu-primary {
-    text-align: center;
-  }
-
-  .menu-toggle {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    margin: 0 auto;
-    line-height: 21px;
-    font-size: 0.9375rem;
-  }
-
-  .menu-toggle:hover,
-  .menu-toggle.active {
-    color: black;
-    text-decoration: underline;
-    background-position: 0 -21px;
-  }
-
-  #menu-primary .wrap {
-    position: relative;
-    z-index: 999;
-    display: none;
-    clear: both;
-    width: 100%;
-    margin: 0.938em auto 0;
-    padding: 1.563em 1.563em 0 0;
-    text-align: left;
-  }
+#menu-primary {
+  text-align: center;
 }
+
+.menu-toggle {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  line-height: 21px;
+  font-size: 0.9375rem;
+  background: rgba(0, 0, 180, 0.2);
+  color: white;
+  padding: 0.78em 0;
+  font-weight: bold;
+}
+
+.menu-toggle:hover,
+.menu-toggle.active {
+  color: white;
+  text-decoration: underline;
+  background-position: 0 -21px;
+}
+
+#menu-primary .wrap {
+  position: relative;
+  z-index: 999;
+  display: none;
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
 #menu-primary ul {
   list-style: none;
   margin: 0;
 }
 
 #menu-primary li a {
-  display: inline-block;
-  color: #16B4CD;
-  margin: 0 1.5em 0 -0.5em;
-  padding: 0 0.5em;
+  display: block;
+  color: #597eaf;
+  margin-bottom: 0.2em;
+  padding: 0.5em 0;
+  text-align: center;
   text-decoration: none;
   font-weight: bold;
   text-shadow: 0 1px 0 #f2f2f2;
+  background: rgba(0, 0, 255, 0.05);
 }
 
 #menu-primary li a:hover,
@@ -1346,12 +1354,18 @@ li.comment:after, li.pingback:after, li.trackback:after,
     text-align: right;
   }
 
+  /*#menu-primary ul {
+      text-align: center;
+  }*/
   .menu-toggle {
     display: none;
   }
 
-  #menu-primary ul {
-    text-align: center;
+  #menu-primary .wrap {
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
   }
 
   #menu-primary .menu-items {
@@ -1397,6 +1411,13 @@ li.comment:after, li.pingback:after, li.trackback:after,
     position: relative;
     float: left;
     display: inline-block;
+  }
+
+  #menu-primary li a {
+    display: inline-block;
+    background-color: transparent;
+    padding: 0 0.5em 0 0;
+    margin-right: 1.5em;
   }
 }
 @media only screen and (min-width: 480px) {

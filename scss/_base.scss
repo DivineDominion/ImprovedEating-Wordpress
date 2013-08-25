@@ -19,7 +19,7 @@ $gutter-width: 2.5em; // gutters between columns
 $grid-padding: 1em; // grid outer padding
 $content-gutter: $gutter-width;
 
-// Fonts - Declare @font-face in _mixins.scss.
+// Colors and Fonts - Declare @font-face in _mixins.scss.
 
 // ==========================================================================
 // Defaults
@@ -1247,40 +1247,39 @@ li.bypostauthor > .comment-text {
         }
     }
 }
-  
-@media only screen and (max-width: 45em) {
 
-    // Primary Menu
+#menu-primary {
+    text-align: center;
+}
 
-    #menu-primary {
-        text-align: center;
-    }
-    .menu-toggle {
-        position:    relative;
-        display:     inline-block;
-        cursor:      pointer;
-        margin:      0 auto;
-        line-height: 21px;
-        font-size:   0.9375rem;
-    }
-    
-    .menu-toggle:hover,
-    .menu-toggle.active {
-        color:               $black;
-        text-decoration:     underline;
-        background-position: 0 -21px;
-    }
+.menu-toggle {
+    position:    relative;
+    display:     block;
+    cursor:      pointer;
+    margin:      0 auto;
+    line-height: 21px;
+    font-size:   0.9375rem;
+    background:  rgba(0,0,180,0.2);
+    color: $white;
+    padding: 0.78em 0;
+    font-weight: bold;
+}
 
-    #menu-primary .wrap {
-        position:   relative;
-        z-index:    999;
-        display:    none; // visibility will be toggled with jquery
-        clear:      both;
-        width:      100%;
-        margin:     0.938em auto 0;
-        padding:    1.563em 1.563em 0 0;
-        text-align: left;
-    }
+.menu-toggle:hover,
+.menu-toggle.active {
+    color:               $white;
+    text-decoration:     underline;
+    background-position: 0 -21px;
+}
+
+#menu-primary .wrap {
+    position:   relative;
+    z-index:    999;
+    display:    none; // visibility will be toggled with jquery
+    clear:      both;
+    width:      100%;
+    margin:     0 auto;
+    text-align: left;
 }
 
 #menu-primary ul {
@@ -1289,18 +1288,20 @@ li.bypostauthor > .comment-text {
 }
 
 #menu-primary li a {
-    display:         inline-block;
-    color:           #16B4CD;
-    margin:  0 1.5em 0 -0.5em ;
-    padding: 0 0.5em;
+    display:         block;
+    color:           $color-link-menu;
+    margin-bottom: 0.2em;
+    padding: 0.5em 0;
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
     text-shadow: 0 1px 0 darken($white, 5%);
+    background: rgba(0,0,255,0.05);
 }
 
 #menu-primary li a:hover,
 #menu-primary li.current-menu-item > a {
-    color: #222222;
+    color: $color-link-menu-active;
 }
 
 // ==========================================================================

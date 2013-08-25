@@ -10,12 +10,15 @@
 $black:             #000;
 $white:             #fff;
 
-$link-color:        #16B4CD;
+$link-color:        #1594BC;
 $link-hover:        darken($link-color, 9%);
-$special-link-hover:    desaturate(darken($link-color, 20%), 30%);
+$special-link-hover:    desaturate(darken($link-color, 40%), 30%);
 $special-link-hover-bg: desaturate(lighten($link-color, 40%), 30%);
 
 $comments-color: #f5f5f5;
+
+$color-link-menu: #597EAF;
+$color-link-menu-active: #222222;
 
 // Typography
 // ==========================================================================

@@ -21,7 +21,8 @@
 html .newsletter__button {
   background: #2daebf url('images/alert-overlay.png') repeat-x;
   color: #fff;
-      
+  position: relative;
+  
   border-width: 0 0 1px 0;
   border-style: solid;
   border-bottom-color: rgba(0,0,0,0.25);
@@ -34,7 +35,8 @@ html .newsletter__button {
   @include box-shadow(0 1px 3px rgba(0,0,0,0.5));
   
   &:hover { background-color: #007d9a; border-bottom-color: inherit; }
-  &:active { top: 1px; border-bottom-color: inherit; }
+  &:active { top: 2px; border-bottom-color: inherit; }
+  &:focus { outline: inherit; }
 }
 
 .abo { margin-top: 25px; }
