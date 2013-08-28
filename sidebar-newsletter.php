@@ -3,9 +3,10 @@
 
         <div id="mc_embed_signup" class="newsletter__wrapper">
             <form action="http://improvedeating.us7.list-manage1.com/subscribe/post?u=7561c4382788637203e9b973e&amp;id=d6395d2dc2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <label class="newletter__label" for="mce-EMAIL">Abonnenten sind smart und sexy!</label>
+                <label class="newsletter__label" for="mce-EMAIL">Abonnenten sind smart und sexy!</label>
                 <input type="email" value="" name="EMAIL" class="newsletter__email" id="mce-EMAIL" placeholder="E-Mail Adresse" required><br>
-                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="newsletter__button">Anmelden</button>
+                <p class="newsletter__policy">Kein Spam, keine Weitergabe.</p>
+                <button type="submit" name="subscribe" class="newsletter__button">Anmelden</button>
             </form>
         </div>
 
