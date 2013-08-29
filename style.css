@@ -3,7 +3,7 @@
  * Theme URI: https://github.com/DivineDominion/ImprovedEating-Wordpress
  * Description: A responsive theme built on top of Seamless and Hybrid Core.
  * Tags: light, one-column, two-columns, right-sidebar, left-sidebar, flexible-width, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
- * Version: 1.2.2
+ * Version: 1.2.4
  * Author: Christian Tietze
  * Author URI: http://christiantietze.de
  * License: GNU General Public License v2.0
@@ -26,7 +26,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  color: #4a4848;
+  color: #454545;
   background: url("images/bg.png") #d8d8d8;
 }
 
@@ -199,7 +199,7 @@ td {
 }
 #wp-calendar thead th {
   background: #e5e5e5;
-  color: #4a4848;
+  color: #454545;
 }
 
 #wp-calendar tbody td {
@@ -547,7 +547,7 @@ li.comment .avatar {
 }
 
 .breadcrumb-trail a {
-  color: #4a4848;
+  color: #454545;
 }
 
 .hentry,
@@ -637,7 +637,7 @@ li.comment .avatar {
 }
 
 .format-chat cite {
-  color: #4a4848;
+  color: #454545;
   border-bottom: 1px solid #00717E;
   padding: 0 0 0.125em;
   font-style: normal;
@@ -994,7 +994,7 @@ html .newsletter__button:focus {
 }
 #sidebar-subsidiary .widget ul li a:hover {
   border-bottom: 1px dotted #333;
-  color: #4a4848;
+  color: #454545;
   text-decoration: none;
 }
 
@@ -1089,7 +1089,7 @@ li.bypostauthor > .comment-text {
   font-size: 13px;
   font-size: 0.8125rem;
   font-style: italic;
-  color: #4a4848;
+  color: #454545;
   background: #e5e5e5;
   text-align: center;
 }
