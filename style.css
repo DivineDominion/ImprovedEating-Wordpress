@@ -3,7 +3,7 @@
  * Theme URI: https://github.com/DivineDominion/ImprovedEating-Wordpress
  * Description: A responsive theme built on top of Seamless and Hybrid Core.
  * Tags: light, one-column, two-columns, right-sidebar, left-sidebar, flexible-width, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author: Christian Tietze
  * Author URI: http://christiantietze.de
  * License: GNU General Public License v2.0
@@ -26,7 +26,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  color: #454545;
+  color: #4a4848;
   background: url("images/bg.png") #d8d8d8;
 }
 
@@ -199,13 +199,13 @@ td {
 }
 #wp-calendar thead th {
   background: #e5e5e5;
-  color: black;
+  color: #4a4848;
 }
 
 #wp-calendar tbody td {
   font-size: 15px;
   font-size: 0.9375rem;
-  background: white;
+  background: #fff9f8;
 }
 #wp-calendar tbody td.pad {
   background: #f5f5f5;
@@ -476,7 +476,7 @@ li.comment .avatar {
 
 #content {
   width: 100%;
-  background: white;
+  background: #fff9f8;
   padding-top: 3.26em;
   padding-bottom: 1.563em;
 }
@@ -547,13 +547,13 @@ li.comment .avatar {
 }
 
 .breadcrumb-trail a {
-  color: black;
+  color: #4a4848;
 }
 
 .hentry,
 .attachment-meta {
   margin: 0 0 0.938em;
-  background: white;
+  background: #fff9f8;
 }
 
 .sticky {
@@ -637,7 +637,7 @@ li.comment .avatar {
 }
 
 .format-chat cite {
-  color: black;
+  color: #4a4848;
   border-bottom: 1px solid #00717E;
   padding: 0 0 0.125em;
   font-style: normal;
@@ -737,7 +737,7 @@ p video {
 }
 
 .loop-meta {
-  background: white;
+  background: #fff9f8;
   font-size: 17px;
   font-size: 1.0625rem;
 }
@@ -994,7 +994,7 @@ html .newsletter__button:focus {
 }
 #sidebar-subsidiary .widget ul li a:hover {
   border-bottom: 1px dotted #333;
-  color: black;
+  color: #4a4848;
   text-decoration: none;
 }
 
@@ -1011,7 +1011,7 @@ html .newsletter__button:focus {
 #comments {
   position: relative;
   margin-top: 2em;
-  background: white;
+  background: #fff9f8;
 }
 
 #comments hr {
@@ -1089,7 +1089,7 @@ li.bypostauthor > .comment-text {
   font-size: 13px;
   font-size: 0.8125rem;
   font-style: italic;
-  color: black;
+  color: #4a4848;
   background: #e5e5e5;
   text-align: center;
 }
@@ -1180,14 +1180,14 @@ li.bypostauthor > .comment-text {
   line-height: 21px;
   font-size: 0.9375rem;
   background: rgba(0, 0, 180, 0.2);
-  color: white;
+  color: #fff9f8;
   padding: 0.78em 0;
   font-weight: bold;
 }
 
 .menu-toggle:hover,
 .menu-toggle.active {
-  color: white;
+  color: #fff9f8;
   text-decoration: underline;
   background-position: 0 -21px;
 }
@@ -1215,7 +1215,7 @@ li.bypostauthor > .comment-text {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  text-shadow: 0 1px 0 #f2f2f2;
+  text-shadow: 0 1px 0 #ffe3df;
   background: rgba(0, 0, 255, 0.05);
 }
 
