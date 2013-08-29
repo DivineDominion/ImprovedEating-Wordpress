@@ -45,7 +45,7 @@ body {
     font-family: $sans-serif;
     font-size:   16px;
     font-size:   1rem;
-    color:       $black;
+    color:       $lightblack;
     background:  url('images/bg.png') #d8d8d8;
 }
 
@@ -1294,7 +1294,7 @@ li.bypostauthor > .comment-text {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 1px 0 darken($white, 5%);
+    text-shadow: 0 1px 0 darken(#fff, 5%);
     background: rgba(0,0,255,0.05);
 }
 
