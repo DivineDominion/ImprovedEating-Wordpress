@@ -47,8 +47,13 @@ body {
     font-size:   1rem;
     color:       $lightblack;
     background:  url('images/bg.png') #d8d8d8;
+    padding-top: 0;
 }
 
+#body {
+  box-shadow: 0 20em 0 rgba(4, 164, 67, 0.5) inset;
+  padding-top: 2em;
+}
 // Links
 
 a {
@@ -1294,7 +1299,7 @@ li.bypostauthor > .comment-text {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 1px 0 darken(#fff, 5%);
+    text-shadow: 0 1px 0 #666;
     background: rgba(0,0,255,0.05);
 }
 
