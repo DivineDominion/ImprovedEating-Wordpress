@@ -32,12 +32,24 @@
     padding:    0;
     @include rem-fallback(margin-left, $content-gutter);
     a {
-        background-image: url('images/logo.png');
+        background-image: url('images/logo.png?v=1.2.7');
         background-size: 100%;
-        width: 564px;
-        height: 65px;
+        width: 560px;
+        height: 74px;
     }
 }
+
+// Retina display
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+  #site-title a { 
+    background-image: url('images/logo@2x.png?v=1.2.7');
+    background-size: 100%;
+    max-width: 1086px;
+    height: 144px;
+  }
+}
+
 
 #site-description {
     clear:      left;

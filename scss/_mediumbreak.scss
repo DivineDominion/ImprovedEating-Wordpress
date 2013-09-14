@@ -4,10 +4,6 @@
 //
 // ==========================================================================
 
-#site-title {
-    margin-top: 1em;
-}
-
 #menu-primary,
 #content { 
     @include rem-fallback(padding-left, $content-gutter);

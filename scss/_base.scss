@@ -547,7 +547,7 @@ li.comment .avatar {
 // Header
 // ==========================================================================
 
-#header {}
+#header { }
 
 #branding {
     display: inline-block;
@@ -561,14 +561,14 @@ li.comment .avatar {
     font-size:   2.5rem;
     padding: 0 10px;
     a {
-        background: url('images/logo@2x.png') top left no-repeat;
+        background: url('images/logo.png?v=1.2.7') top left no-repeat;
         background-size: contain;
         display: inline-block;
         width: 100%;
-        max-width: 819px;
-        max-height: 93px;
+        max-width: 760px;
+        max-height: 100px;
         
-        outline: none;;
+        outline: none;
         overflow: hidden;
         white-space: nowrap;
         text-indent: -9999px;
@@ -968,6 +968,7 @@ a.page-numbers:hover,
     font-weight: bold;
     font-size: 18px;
     font-size: 1.125rem;
+    margin-left: 1.1111em;
 }
 
 .widget-tags {

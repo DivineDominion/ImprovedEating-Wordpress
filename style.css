@@ -600,12 +600,12 @@ li.comment .avatar {
 }
 /* line 563, scss/_base.scss */
 #site-title a {
-  background: url("images/logo@2x.png") top left no-repeat;
+  background: url("images/logo.png?v=1.2.7") top left no-repeat;
   background-size: contain;
   display: inline-block;
   width: 100%;
-  max-width: 819px;
-  max-height: 93px;
+  max-width: 760px;
+  max-height: 100px;
   outline: none;
   overflow: hidden;
   white-space: nowrap;
@@ -1003,9 +1003,10 @@ a.page-numbers:hover,
   font-weight: bold;
   font-size: 18px;
   font-size: 1.125rem;
+  margin-left: 1.1111em;
 }
 
-/* line 974, scss/_base.scss */
+/* line 975, scss/_base.scss */
 .widget-tags a {
   display: inline-block;
   margin: 0 0.125em 0.313em 0.125em;
@@ -1015,25 +1016,25 @@ a.page-numbers:hover,
   font-size: 0.875rem !important;
   background: #f5f5f5;
 }
-/* line 982, scss/_base.scss */
+/* line 983, scss/_base.scss */
 .widget-tags a:hover {
   border-color: #d5d5d5;
   background: #eaeaea;
   text-decoration: none;
 }
 
-/* line 990, scss/_base.scss */
+/* line 991, scss/_base.scss */
 .widget-search {
   padding-bottom: 1.563em;
 }
-/* line 992, scss/_base.scss */
+/* line 993, scss/_base.scss */
 .widget-search label {
   color: #959595;
   font-size: 15px;
   font-size: 0.9375rem;
   font-style: italic;
 }
-/* line 998, scss/_base.scss */
+/* line 999, scss/_base.scss */
 .widget-search input[type="text"] {
   display: block;
   width: 100%;
@@ -1045,18 +1046,18 @@ a.page-numbers:hover,
   font-size: 17px;
   font-size: 1.0625rem;
 }
-/* line 1009, scss/_base.scss */
+/* line 1010, scss/_base.scss */
 .widget-search input[type="submit"] {
   display: none;
 }
-/* line 1011, scss/_base.scss */
+/* line 1012, scss/_base.scss */
 .widget-search input[type="submit"]:focus {
   border-color: #e5e5e5;
   color: #454545;
   background: #f5f5f5;
 }
 
-/* line 1019, scss/_base.scss */
+/* line 1020, scss/_base.scss */
 .sidebar ul {
   margin-left: 1.25em;
 }
@@ -1138,7 +1139,7 @@ html .newsletter__button:focus {
   margin-top: 25px;
 }
 
-/* line 1031, scss/_base.scss */
+/* line 1032, scss/_base.scss */
 #sidebar-subsidiary {
   overflow: hidden;
   width: 100%;
@@ -1146,7 +1147,7 @@ html .newsletter__button:focus {
   padding: 1.563em 0 0 0;
 }
 
-/* line 1037, scss/_base.scss */
+/* line 1038, scss/_base.scss */
 #sidebar-subsidiary .widget {
   float: left;
   width: 100%;
@@ -1155,48 +1156,48 @@ html .newsletter__button:focus {
   font-size: 15px;
   font-size: 0.938rem;
 }
-/* line 1044, scss/_base.scss */
+/* line 1045, scss/_base.scss */
 #sidebar-subsidiary .widget ul {
   list-style: disc;
 }
-/* line 1046, scss/_base.scss */
+/* line 1047, scss/_base.scss */
 #sidebar-subsidiary .widget ul li a {
   border-bottom: 1px dotted #bbb;
   color: #777;
 }
-/* line 1049, scss/_base.scss */
+/* line 1050, scss/_base.scss */
 #sidebar-subsidiary .widget ul li a:hover {
   border-bottom: 1px dotted #333;
   color: #454545;
   text-decoration: none;
 }
 
-/* line 1058, scss/_base.scss */
+/* line 1059, scss/_base.scss */
 .cta {
   color: #F9F2E7;
   background: #00A8C6;
   font-size: 1.2em;
   padding: 0.6em 1em;
 }
-/* line 1064, scss/_base.scss */
+/* line 1065, scss/_base.scss */
 .cta a {
   color: #AEE239;
 }
 
-/* line 1071, scss/_base.scss */
+/* line 1072, scss/_base.scss */
 #comments {
   position: relative;
   margin-top: 2em;
   background: #fff9f8;
 }
 
-/* line 1077, scss/_base.scss */
+/* line 1078, scss/_base.scss */
 #comments hr {
   border: 0 solid transparent;
   border-top: 5px solid #e5e5e5;
 }
 
-/* line 1084, scss/_base.scss */
+/* line 1085, scss/_base.scss */
 .comments-closed {
   padding: 1.563em 0 0;
   border-top: 1px solid #e5e5e5;
@@ -1205,12 +1206,12 @@ html .newsletter__button:focus {
   text-align: center;
 }
 
-/* line 1094, scss/_base.scss */
+/* line 1095, scss/_base.scss */
 .comment-list {
   margin: 0 0 1.563em 0;
   list-style: none;
 }
-/* line 1097, scss/_base.scss */
+/* line 1098, scss/_base.scss */
 .comment-list ol.children {
   border-left: 10px solid whitesmoke;
   margin-left: 1px;
@@ -1219,33 +1220,33 @@ html .newsletter__button:focus {
   list-style: none;
 }
 
-/* line 1108, scss/_base.scss */
+/* line 1109, scss/_base.scss */
 .pingback-text p:last-child {
   margin-bottom: 0;
 }
 
-/* line 1113, scss/_base.scss */
+/* line 1114, scss/_base.scss */
 .comment,
 .ping {
   clear: both;
 }
 
-/* line 1117, scss/_base.scss */
+/* line 1118, scss/_base.scss */
 .comment {
   margin-bottom: 1.563em;
 }
 
-/* line 1123, scss/_base.scss */
+/* line 1124, scss/_base.scss */
 .comment-meta {
   padding: 0.750em 0 0;
   margin: 0 0 1.563em;
 }
 
-/* line 1128, scss/_base.scss */
+/* line 1129, scss/_base.scss */
 .comment-author {
   display: block;
 }
-/* line 1130, scss/_base.scss */
+/* line 1131, scss/_base.scss */
 .comment-author cite {
   font-size: 17px;
   font-size: 1.0625rem;
@@ -1253,7 +1254,7 @@ html .newsletter__button:focus {
   color: #656565;
 }
 
-/* line 1140, scss/_base.scss */
+/* line 1141, scss/_base.scss */
 .comment-text {
   clear: left;
   padding: 1.563em 0.750em 0 0.750em;
@@ -1263,12 +1264,12 @@ html .newsletter__button:focus {
   background: #f5f5f5;
 }
 
-/* line 1148, scss/_base.scss */
+/* line 1149, scss/_base.scss */
 li.bypostauthor > .comment-text {
   background: #f5f5fa;
 }
 
-/* line 1154, scss/_base.scss */
+/* line 1155, scss/_base.scss */
 .comment-reply-link {
   position: relative;
   display: inline-block;
@@ -1282,37 +1283,37 @@ li.bypostauthor > .comment-text {
   background: #e5e5e5;
   text-align: center;
 }
-/* line 1166, scss/_base.scss */
+/* line 1167, scss/_base.scss */
 .comment-reply-link:hover {
   background: #d5d5d5;
   text-decoration: none;
 }
 
-/* line 1175, scss/_base.scss */
+/* line 1176, scss/_base.scss */
 #respond .log-in-out {
   color: #959595;
 }
-/* line 1177, scss/_base.scss */
+/* line 1178, scss/_base.scss */
 #respond .log-in-out a {
   font-size: 17px;
   font-size: 1.0625rem;
   font-style: normal;
 }
-/* line 1183, scss/_base.scss */
+/* line 1184, scss/_base.scss */
 #respond label {
   font-size: 15px;
   font-size: 0.9375rem;
   font-style: italic;
   color: #959595;
 }
-/* line 1188, scss/_base.scss */
+/* line 1189, scss/_base.scss */
 #respond label .required {
   font-size: 17px;
   font-size: 1.0625rem;
   font-weight: bold;
   color: #cb5700;
 }
-/* line 1196, scss/_base.scss */
+/* line 1197, scss/_base.scss */
 #respond input,
 #respond textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1322,38 +1323,38 @@ li.bypostauthor > .comment-text {
   background: #e5e5e5;
   border: 1px solid #d5d5d5;
 }
-/* line 1203, scss/_base.scss */
+/* line 1204, scss/_base.scss */
 #respond input:focus,
 #respond textarea:focus {
   color: #454545;
   background: #f5f5f5;
   border-color: #e5e5e5;
 }
-/* line 1211, scss/_base.scss */
+/* line 1212, scss/_base.scss */
 #respond input[type="text"],
 #respond input[type="password"],
 #respond input[type="email"] {
   width: 100%;
   min-width: 100%;
 }
-/* line 1215, scss/_base.scss */
+/* line 1216, scss/_base.scss */
 #respond input[type="submit"] {
   padding: 0.750em 1.250em;
 }
-/* line 1218, scss/_base.scss */
+/* line 1219, scss/_base.scss */
 #respond textarea {
   width: 100%;
   padding: 1.250em;
 }
 
-/* line 1224, scss/_base.scss */
+/* line 1225, scss/_base.scss */
 #reply-title small {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
   font-size: 1.0625rem;
 }
 
-/* line 1235, scss/_base.scss */
+/* line 1236, scss/_base.scss */
 #footer .copyright {
   float: left;
   text-align: center;
@@ -1361,7 +1362,7 @@ li.bypostauthor > .comment-text {
   padding: 0.938em 0;
   margin: 0;
 }
-/* line 1242, scss/_base.scss */
+/* line 1243, scss/_base.scss */
 #footer .credit {
   float: left;
   text-align: center;
@@ -1370,12 +1371,12 @@ li.bypostauthor > .comment-text {
   margin: 0;
 }
 
-/* line 1255, scss/_base.scss */
+/* line 1256, scss/_base.scss */
 #menu-primary {
   text-align: center;
 }
 
-/* line 1259, scss/_base.scss */
+/* line 1260, scss/_base.scss */
 .menu-toggle {
   position: relative;
   display: block;
@@ -1389,7 +1390,7 @@ li.bypostauthor > .comment-text {
   font-weight: bold;
 }
 
-/* line 1273, scss/_base.scss */
+/* line 1274, scss/_base.scss */
 .menu-toggle:hover,
 .menu-toggle.active {
   color: #fff9f8;
@@ -1397,7 +1398,7 @@ li.bypostauthor > .comment-text {
   background-position: 0 -21px;
 }
 
-/* line 1279, scss/_base.scss */
+/* line 1280, scss/_base.scss */
 #menu-primary .wrap {
   position: relative;
   z-index: 999;
@@ -1408,13 +1409,13 @@ li.bypostauthor > .comment-text {
   text-align: left;
 }
 
-/* line 1289, scss/_base.scss */
+/* line 1290, scss/_base.scss */
 #menu-primary ul {
   list-style: none;
   margin: 0;
 }
 
-/* line 1294, scss/_base.scss */
+/* line 1295, scss/_base.scss */
 #menu-primary li a {
   display: block;
   color: #d5dce6;
@@ -1427,13 +1428,13 @@ li.bypostauthor > .comment-text {
   background: rgba(0, 0, 255, 0.05);
 }
 
-/* line 1307, scss/_base.scss */
+/* line 1308, scss/_base.scss */
 #menu-primary li a:hover,
 #menu-primary li.current-menu-item > a {
   color: #222222;
 }
 
-/* line 1328, scss/_base.scss */
+/* line 1329, scss/_base.scss */
 .clearfix:after,
 #container:after,
 #header:after,
@@ -1532,25 +1533,25 @@ li.comment:after, li.pingback:after, li.trackback:after,
   }
   /* line 34, scss/_largebreak.scss */
   #site-title a {
-    background-image: url("images/logo.png");
+    background-image: url("images/logo.png?v=1.2.7");
     background-size: 100%;
-    width: 564px;
-    height: 65px;
+    width: 560px;
+    height: 74px;
   }
 
-  /* line 42, scss/_largebreak.scss */
+  /* line 54, scss/_largebreak.scss */
   #site-description {
     clear: left;
     float: left;
     text-align: left;
   }
 
-  /* line 50, scss/_largebreak.scss */
+  /* line 62, scss/_largebreak.scss */
   #menu-primary .nav {
     float: left;
   }
 
-  /* line 56, scss/_largebreak.scss */
+  /* line 68, scss/_largebreak.scss */
   #respond input[type="text"],
   #respond input[type="password"],
   #respond input[type="email"] {
@@ -1560,7 +1561,7 @@ li.comment:after, li.pingback:after, li.trackback:after,
     padding: 10px 1.563em;
   }
 
-  /* line 65, scss/_largebreak.scss */
+  /* line 77, scss/_largebreak.scss */
   #sidebar-subsidiary .widget {
     float: left;
     width: 22.04724%;
@@ -1570,18 +1571,18 @@ li.comment:after, li.pingback:after, li.trackback:after,
     color: #333;
     font-size: 0.875em;
   }
-  /* line 70, scss/_largebreak.scss */
+  /* line 82, scss/_largebreak.scss */
   #sidebar-subsidiary .widget:first-child {
     margin-right: 0;
   }
 
-  /* line 78, scss/_largebreak.scss */
+  /* line 90, scss/_largebreak.scss */
   #footer .copyright {
     float: left;
     width: 49%;
     text-align: left;
   }
-  /* line 83, scss/_largebreak.scss */
+  /* line 95, scss/_largebreak.scss */
   #footer .credit {
     float: right;
     width: 49%;
@@ -1591,12 +1592,12 @@ li.comment:after, li.pingback:after, li.trackback:after,
   /*#menu-primary ul {
       text-align: center;
   }*/
-  /* line 95, scss/_largebreak.scss */
+  /* line 107, scss/_largebreak.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 97, scss/_largebreak.scss */
+  /* line 109, scss/_largebreak.scss */
   #menu-primary .wrap {
     display: block;
     clear: both;
@@ -1604,30 +1605,30 @@ li.comment:after, li.pingback:after, li.trackback:after,
     padding: 0;
   }
 
-  /* line 104, scss/_largebreak.scss */
+  /* line 116, scss/_largebreak.scss */
   #menu-primary .menu-items {
     zoom: 1;
   }
 
-  /* line 109, scss/_largebreak.scss */
+  /* line 121, scss/_largebreak.scss */
   #menu-primary .menu-items::before,
   #menu-primary .menu-items::after {
     content: "";
     display: table;
   }
 
-  /* line 114, scss/_largebreak.scss */
+  /* line 126, scss/_largebreak.scss */
   #menu-primary .menu-items::after {
     clear: both;
   }
 
-  /* line 118, scss/_largebreak.scss */
+  /* line 130, scss/_largebreak.scss */
   #menu-primary .menu-items > ul {
     width: 100%;
     margin: 60px auto;
   }
 
-  /* line 123, scss/_largebreak.scss */
+  /* line 135, scss/_largebreak.scss */
   #menu-primary ul ul {
     position: absolute;
     z-index: 1;
@@ -1637,27 +1638,27 @@ li.comment:after, li.pingback:after, li.trackback:after,
     text-align: left;
   }
 
-  /* line 132, scss/_largebreak.scss */
+  /* line 144, scss/_largebreak.scss */
   #menu-primary li:hover > ul {
     visibility: visible;
     margin: 0;
   }
 
-  /* line 137, scss/_largebreak.scss */
+  /* line 149, scss/_largebreak.scss */
   #menu-primary ul ul ul {
     top: 0;
     left: 230px;
     margin: 0 0 0 20px;
   }
 
-  /* line 143, scss/_largebreak.scss */
+  /* line 155, scss/_largebreak.scss */
   #menu-primary li {
     position: relative;
     float: left;
     display: inline-block;
   }
 
-  /* line 149, scss/_largebreak.scss */
+  /* line 161, scss/_largebreak.scss */
   #menu-primary li a {
     display: inline-block;
     background-color: transparent;
@@ -1665,13 +1666,17 @@ li.comment:after, li.pingback:after, li.trackback:after,
     margin-right: 1.5em;
   }
 }
-@media only screen and (min-width: 480px) {
-  /* line 7, scss/_mediumbreak.scss */
-  #site-title {
-    margin-top: 1em;
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 768px) and (min-resolution: 144dpi) {
+  /* line 45, scss/_largebreak.scss */
+  #site-title a {
+    background-image: url("images/logo@2x.png?v=1.2.7");
+    background-size: 100%;
+    max-width: 1086px;
+    height: 144px;
   }
-
-  /* line 12, scss/_mediumbreak.scss */
+}
+@media only screen and (min-width: 480px) {
+  /* line 8, scss/_mediumbreak.scss */
   #menu-primary,
   #content {
     padding-left: 40px;
@@ -1680,7 +1685,7 @@ li.comment:after, li.pingback:after, li.trackback:after,
     padding-right: 2.5rem;
   }
 
-  /* line 17, scss/_mediumbreak.scss */
+  /* line 13, scss/_mediumbreak.scss */
   .sidebar-primary {
     padding-left: 1em;
     padding-right: 1em;
