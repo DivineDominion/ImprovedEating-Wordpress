@@ -322,6 +322,7 @@ input:-moz-focus-inner {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="url"],
 input[type="search"],
 textarea {
     color:  #666;
@@ -333,6 +334,7 @@ textarea {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="url"],
 input[type="search"] {
     padding: 9px 12px;;
 }
@@ -1211,6 +1213,7 @@ li.bypostauthor > .comment-text {
     }
     input[type="text"],
     input[type="password"],
+    input[type="url"],
     input[type="email"] {
         width: 100%;
         min-width: 100%;
