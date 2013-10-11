@@ -3,7 +3,7 @@
  * Theme URI: https://github.com/DivineDominion/ImprovedEating-Wordpress
  * Description: A responsive theme built on top of Seamless and Hybrid Core.
  * Tags: light, one-column, two-columns, right-sidebar, left-sidebar, flexible-width, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
- * Version: 1.2.9
+ * Version: 1.2.10
  * Author: Christian Tietze
  * Author URI: http://christiantietze.de
  * License: GNU General Public License v2.0
@@ -574,7 +574,7 @@ li.comment .avatar {
   font-size: 2.75rem;
   font-weight: bold;
   font-family: "Oswald", "ITCFranklinGothic LT BookCn", Arial, sans-serif;
-  line-height: 1.0em;
+  line-height: 1.2em;
 }
 .entry-title a {
   color: #4A4A4A;
