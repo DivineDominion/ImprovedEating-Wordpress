@@ -1107,7 +1107,14 @@ a.page-numbers:hover,
     }
 }
 
-.pingback-list {
+.trackback-list, .pingback-list {
+  font-size: 80%;
+  .comment-author {
+    display: inline;
+    cite { font-size: inherit; }
+  }
+  .comment-meta { margin-bottom: 0; }
+  
 }
 
 .pingback-text p:last-child { margin-bottom: 0; }
@@ -1338,3 +1345,9 @@ li.comment:after, li.pingback:after, li.trackback:after,
     clear:      both;
     visibility: hidden;
 }
+
+// ==========================================================================
+// Plugin template resets
+// ==========================================================================
+
+
