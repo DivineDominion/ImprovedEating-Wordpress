@@ -19,6 +19,9 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); // wp_head ?>
 
+<!--[if (lt IE 9)&(!IEMobile)]>
+<script src="<?php bloginfo('template_directory'); ?>/js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
 </head>
 
 <body class="<?php hybrid_body_class(); ?>">
