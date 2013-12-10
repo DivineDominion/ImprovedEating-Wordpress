@@ -45,106 +45,110 @@ add_action( 'after_setup_theme', 'seamless_theme_setup' );
  */
 function seamless_theme_setup() {
 
-	/* Get action/filter hook prefix. */
-	$prefix = hybrid_get_prefix();
+    /* Get action/filter hook prefix. */
+    $prefix = hybrid_get_prefix();
 
-	/* Register menus. */
-	add_theme_support( 
-		'hybrid-core-menus', 
-		array( 'primary') 
-	);
+    /* Register menus. */
+    add_theme_support( 
+        'hybrid-core-menus', 
+        array( 'primary') 
+    );
 
-	/* Register sidebars. */
-	add_theme_support( 
-		'hybrid-core-sidebars', 
-		array( 'primary', 'subsidiary' ) 
-	);
+    /* Register sidebars. */
+    add_theme_support( 
+        'hybrid-core-sidebars', 
+        array( 'primary', 'subsidiary' ) 
+    );
+    
+    improvedtheming_add_newsletter_sidebar();
 
-	/* Load scripts. */
-	add_theme_support( 
-		'hybrid-core-scripts', 
-		array( 'comment-reply' ) 
-	);
+    /* Load scripts. */
+    add_theme_support( 
+        'hybrid-core-scripts', 
+        array( 'comment-reply' ) 
+    );
 
-	/* Load styles. */
-	add_theme_support( 
-		'hybrid-core-styles', 
-		array( '25px', 'gallery', 'parent', 'style' ) 
-	);
+    /* Load styles. */
+    add_theme_support( 
+        'hybrid-core-styles', 
+        array( '25px', 'gallery', 'parent', 'style' ) 
+    );
 
-	/* Load widgets. */
-	add_theme_support( 'hybrid-core-widgets' );
+    /* Load widgets. */
+    add_theme_support( 'hybrid-core-widgets' );
 
-	/* Load shortcodes. */
-	add_theme_support( 'hybrid-core-shortcodes' );
+    /* Load shortcodes. */
+    add_theme_support( 'hybrid-core-shortcodes' );
 
-	/* Enable custom template hierarchy. */
-	add_theme_support( 'hybrid-core-template-hierarchy' );
+    /* Enable custom template hierarchy. */
+    add_theme_support( 'hybrid-core-template-hierarchy' );
 
-	/* Enable theme layouts (need to add stylesheet support). */
-	add_theme_support( 
-		'theme-layouts', 
-		array( '1c', '2c-l', '2c-r' ),
-		array( 'default' => '1c', 'customizer' => true ) 
-	);
+    /* Enable theme layouts (need to add stylesheet support). */
+    add_theme_support( 
+        'theme-layouts', 
+        array( '1c', '2c-l', '2c-r' ),
+        array( 'default' => '1c', 'customizer' => true ) 
+    );
 
-	/* Allow per-post stylesheets. */
-	add_theme_support( 'post-stylesheets' );
+    /* Allow per-post stylesheets. */
+    add_theme_support( 'post-stylesheets' );
 
-	/* Support pagination instead of prev/next links. */
-	add_theme_support( 'loop-pagination' );
+    /* Support pagination instead of prev/next links. */
+    add_theme_support( 'loop-pagination' );
 
-	/* The best thumbnail/image script ever. */
-	add_theme_support( 'get-the-image' );
+    /* The best thumbnail/image script ever. */
+    add_theme_support( 'get-the-image' );
 
-	/* Use breadcrumbs. */
-	add_theme_support( 'breadcrumb-trail' );
+    /* Use breadcrumbs. */
+    add_theme_support( 'breadcrumb-trail' );
 
-	/* Nicer [gallery] shortcode implementation. */
-	add_theme_support( 'cleaner-gallery' );
+    /* Nicer [gallery] shortcode implementation. */
+    add_theme_support( 'cleaner-gallery' );
 
-	/* Better captions for themes to style. */
-	add_theme_support( 'cleaner-caption' );
+    /* Better captions for themes to style. */
+    add_theme_support( 'cleaner-caption' );
 
-	/* Automatically add feed links to <head>. */
-	add_theme_support( 'automatic-feed-links' );
+    /* Automatically add feed links to <head>. */
+    add_theme_support( 'automatic-feed-links' );
 
-	/* Post formats. */
-	add_theme_support( 
-		'post-formats', 
-		array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' ) 
-	);
+    /* Post formats. */
+    add_theme_support( 
+        'post-formats', 
+        array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' ) 
+    );
 
-	/* Add support for a custom header image. */
-	add_theme_support(
-		'custom-header',
-		array( 'header-text' => false ) );
+    /* Add support for a custom header image. */
+    add_theme_support(
+        'custom-header',
+        array( 'header-text' => false ) );
 
-	/* Custom background. */
-	add_theme_support( 
-		'custom-background',
-		array( 'default-color' => 'ffffff' )
-	);
+    /* Custom background. */
+    add_theme_support( 
+        'custom-background',
+        array( 'default-color' => 'ffffff' )
+    );
 
-	/* Handle content width for embeds and images. */
-	hybrid_set_content_width( 1040 );
+    /* Handle content width for embeds and images. */
+    hybrid_set_content_width( 1040 );
 
-	/* Enqueue scripts (and related stylesheets) */
-	add_action( 'wp_enqueue_scripts', 'seamless_scripts' );
+    /* Enqueue scripts (and related stylesheets) */
+    add_action( 'wp_enqueue_scripts', 'seamless_scripts' );
 
-	/* Wrap embeds with some custom HTML to handle responsive layout. */
-	add_filter( 'embed_handler_html', 'seamless_embed_html' );
-	add_filter( 'embed_oembed_html',  'seamless_embed_html' );
+    /* Wrap embeds with some custom HTML to handle responsive layout. */
+    add_filter( 'embed_handler_html', 'seamless_embed_html' );
+    add_filter( 'embed_oembed_html',  'seamless_embed_html' );
 
-	/* Filter the sidebar widgets. */
-	add_filter( 'sidebars_widgets', 'seamless_disable_sidebars' );
-	add_action( 'template_redirect', 'seamless_one_column' );
+    /* Filter the sidebar widgets. */
+    add_filter( 'sidebars_widgets', 'seamless_disable_sidebars' );
+    add_action( 'template_redirect', 'seamless_one_column' );
+    
+    add_action( 'widgets_init', 'register_mailchimp_widget' );
 
-	/** Hybrid Core 1.6 changes **/
-	add_filter( "{$prefix}_sidebar_defaults", 'seamless_sidebar_defaults' );
-	add_filter( 'cleaner_gallery_defaults',   'seamless_gallery_defaults' );
-	add_filter( 'the_content', 'seamless_aside_infinity', 9 );
-	/****************************/
+    /** Hybrid Core 1.6 changes **/
+    add_filter( "{$prefix}_sidebar_defaults", 'seamless_sidebar_defaults' );
+    add_filter( 'cleaner_gallery_defaults',   'seamless_gallery_defaults' );
+    add_filter( 'the_content', 'seamless_aside_infinity', 9 );
+    /****************************/
 }
 
 /* === HYBRID CORE 1.6 CHANGES. === 
@@ -154,86 +158,86 @@ function seamless_theme_setup() {
  * is released.
  */
 
-	/**
-	 * Content template.  This is an early version of what a content template function will look like
-	 * in future versions of Hybrid Core.
-	 *
-	 * @since  0.1.0
-	 * @access public
-	 * @return void
-	 */
-	function seamless_get_content_template() {
+    /**
+     * Content template.  This is an early version of what a content template function will look like
+     * in future versions of Hybrid Core.
+     *
+     * @since  0.1.0
+     * @access public
+     * @return void
+     */
+    function seamless_get_content_template() {
 
-		$templates = array();
-		$post_type = get_post_type();
+        $templates = array();
+        $post_type = get_post_type();
 
-		if ( post_type_supports( $post_type, 'post-formats' ) ) {
+        if ( post_type_supports( $post_type, 'post-formats' ) ) {
 
-			$post_format = get_post_format() ? get_post_format() : 'standard';
+            $post_format = get_post_format() ? get_post_format() : 'standard';
 
-			$templates[] = "content-{$post_type}-{$post_format}.php";
-			$templates[] = "content-{$post_format}.php";
-		}
+            $templates[] = "content-{$post_type}-{$post_format}.php";
+            $templates[] = "content-{$post_format}.php";
+        }
 
-		$templates[] = "content-{$post_type}.php";
-		$templates[] = 'content.php';
+        $templates[] = "content-{$post_type}.php";
+        $templates[] = 'content.php';
 
-		return locate_template( $templates, true, false );
-	}
+        return locate_template( $templates, true, false );
+    }
 
-	/**
-	 * Sidebar parameter defaults.
-	 *
-	 * @since  0.1.0
-	 * @access public
-	 * @param  array  $defaults
-	 * @return array
-	 */
-	function seamless_sidebar_defaults( $defaults ) {
+    /**
+     * Sidebar parameter defaults.
+     *
+     * @since  0.1.0
+     * @access public
+     * @param  array  $defaults
+     * @return array
+     */
+    function seamless_sidebar_defaults( $defaults ) {
 
-		$defaults = array(
-			'before_widget' => '<section id="%1$s" class="widget %2$s widget-%2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>'
-		);
+        $defaults = array(
+            'before_widget' => '<section id="%1$s" class="widget %2$s widget-%2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>'
+        );
 
-		return $defaults;
-	}
+        return $defaults;
+    }
 
-	/**
-	 * Gallery defaults for the Cleaner Gallery extension.
-	 *
-	 * @since  0.1.0
-	 * @access public
-	 * @param  array  $defaults
-	 * @return array
-	 */
-	function seamless_gallery_defaults( $defaults ) {
+    /**
+     * Gallery defaults for the Cleaner Gallery extension.
+     *
+     * @since  0.1.0
+     * @access public
+     * @param  array  $defaults
+     * @return array
+     */
+    function seamless_gallery_defaults( $defaults ) {
 
-		$defaults['itemtag']    = 'figure';
-		$defaults['icontag']    = 'div';
-		$defaults['captiontag'] = 'figcaption';
+        $defaults['itemtag']    = 'figure';
+        $defaults['icontag']    = 'div';
+        $defaults['captiontag'] = 'figcaption';
 
-		return $defaults;
-	}
+        return $defaults;
+    }
 
-	/**
-	 * Adds an infinity character "&#8734;" to the end of the post content on 'aside' posts.  This 
-	 * is from version 0.1.1 of the Post Format Tools extension.
-	 *
-	 * @since  0.1.0
-	 * @access public
-	 * @param  string $content The post content.
-	 * @return string $content
-	 */
-	function seamless_aside_infinity( $content ) {
+    /**
+     * Adds an infinity character "&#8734;" to the end of the post content on 'aside' posts.  This 
+     * is from version 0.1.1 of the Post Format Tools extension.
+     *
+     * @since  0.1.0
+     * @access public
+     * @param  string $content The post content.
+     * @return string $content
+     */
+    function seamless_aside_infinity( $content ) {
 
-		if ( has_post_format( 'aside' ) && !is_singular() )
-			$content .= ' <a class="permalink" href="' . get_permalink() . '" title="' . the_title_attribute( array( 'echo' => false ) ) . '">&#8734;</a>';
+        if ( has_post_format( 'aside' ) && !is_singular() )
+            $content .= ' <a class="permalink" href="' . get_permalink() . '" title="' . the_title_attribute( array( 'echo' => false ) ) . '">&#8734;</a>';
 
-		return $content;
-	}
+        return $content;
+    }
 
 /* End Hybrid Core 1.6 section. */
 
@@ -245,9 +249,9 @@ function seamless_theme_setup() {
 
 function seamless_scripts() {
 
-	wp_register_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20120206', true );
+    wp_register_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20120206', true );
 
-	wp_enqueue_script( 'navigation' );
+    wp_enqueue_script( 'navigation' );
 
 }
 
@@ -260,11 +264,11 @@ function seamless_scripts() {
  */
 function seamless_one_column() {
 
-	if ( !is_active_sidebar( 'primary' ) )
-		add_filter( 'theme_mod_theme_layout', 'seamless_theme_layout_one_column' );
+    if ( !is_active_sidebar( 'primary' ) )
+        add_filter( 'theme_mod_theme_layout', 'seamless_theme_layout_one_column' );
 
-	elseif ( is_attachment() && wp_attachment_is_image() && 'default' == get_post_layout( get_queried_object_id() ) )
-		add_filter( 'theme_mod_theme_layout', 'seamless_theme_layout_one_column' );
+    elseif ( is_attachment() && wp_attachment_is_image() && 'default' == get_post_layout( get_queried_object_id() ) )
+        add_filter( 'theme_mod_theme_layout', 'seamless_theme_layout_one_column' );
 
 }
 
@@ -276,7 +280,7 @@ function seamless_one_column() {
  * @return string
  */
 function seamless_theme_layout_one_column( $layout ) {
-	return '1c';
+    return '1c';
 }
 
 
@@ -289,14 +293,14 @@ function seamless_theme_layout_one_column( $layout ) {
  */
 
 function seamless_disable_sidebars( $sidebars_widgets ) {
-	global $wp_customize;
+    global $wp_customize;
 
-	$customize = ( is_object( $wp_customize ) && $wp_customize->is_preview() ) ? true : false;
+    $customize = ( is_object( $wp_customize ) && $wp_customize->is_preview() ) ? true : false;
 
-	if ( !is_admin() && !$customize && '1c' == get_theme_mod( 'theme_layout' ) )
-		$sidebars_widgets['primary'] = false;
+    if ( !is_admin() && !$customize && '1c' == get_theme_mod( 'theme_layout' ) )
+        $sidebars_widgets['primary'] = false;
 
-	return $sidebars_widgets;
+    return $sidebars_widgets;
 }
 
 /**
@@ -309,10 +313,10 @@ function seamless_disable_sidebars( $sidebars_widgets ) {
  */
 function seamless_embed_html( $html ) {
 
-	if ( in_the_loop() && has_post_format( 'video' ) && preg_match( '/(<embed|object|iframe)/', $html ) )
-		$html = '<div class="embed-wrap">' . $html . '</div>';
+    if ( in_the_loop() && has_post_format( 'video' ) && preg_match( '/(<embed|object|iframe)/', $html ) )
+        $html = '<div class="embed-wrap">' . $html . '</div>';
 
-	return $html;
+    return $html;
 }
 
 // Deactivates JetPack plugin OpenGraph stuff
@@ -346,6 +350,128 @@ function improvedtheming_comments_args() {
 
     /* Return the arguments and allow devs to overwrite them. */
     return apply_atomic( 'list_comments_args', $args );
+}
+
+function improvedtheming_add_newsletter_sidebar() {
+    $defaults = array(
+        'before_widget' => '<section id="%1$s" class="widget %2$s widget-%2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3 class="widget-title newsletter_title">',
+        'after_title'   => '</h3>'
+    );
+
+    $sidebar = array(
+        'id'          => 'Newsletter',
+        'name'        => _x( 'Newsletter', 'sidebar', 'hybrid-core' ),
+        'description' => __( 'Widget area on top of Primary', 'hybrid-core' )
+    );
+    
+    /* Allow developers to filter the default sidebar arguments. */
+    // $defaults = apply_filters( hybrid_get_prefix() . '_sidebar_defaults', $defaults, $sidebar );
+
+    /* Parse the sidebar arguments and defaults. */
+    $args = wp_parse_args( $sidebar, $defaults );
+
+    /* If no 'id' was given, use the $sidebar variable and sanitize it. */
+    $args['id'] = sanitize_key( $args['id'] );
+
+    // /* Allow developers to filter the sidebar arguments. */
+    // $args = apply_filters( hybrid_get_prefix() . '_sidebar_args', $args, $sidebar );
+
+    /* Register the sidebar. */
+    register_sidebar( $args );
+}
+
+
+class MailChimp_Widget extends WP_Widget {
+
+    /**
+     * Register widget with WordPress.
+     */
+    function __construct() {
+        parent::__construct(
+            'mailchimp_widget',
+            __('MailChimp Newsletter', 'text_domain'),
+            array( 'description' => __( 'Show a sign-up form and link to archives', 'text_domain' ) )
+        );
+    }
+
+    /**
+     * Front-end display of widget.
+     *
+     * @see WP_Widget::widget()
+     *
+     * @param array $args     Widget arguments.
+     * @param array $instance Saved values from database.
+     */
+    public function widget( $args, $instance ) {
+        $title = apply_filters( 'widget_title', $instance['title'] );
+
+        echo $args['before_widget'];
+
+        if ( ! empty( $title ) ) {
+            echo $args['before_title'] . $title . $args['after_title'];
+        }
+        ?>
+        
+        <div id="mc_embed_signup" class="newsletter__wrapper">
+            <form action="http://improvedeating.us7.list-manage1.com/subscribe/post?u=7561c4382788637203e9b973e&amp;id=d6395d2dc2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <label class="newsletter__label" for="mce-EMAIL">Abonnenten sind smart und sexy!</label>
+                <input type="email" value="" name="EMAIL" class="newsletter__email" id="mce-EMAIL" placeholder="E-Mail Adresse" required><br>
+                <p class="newsletter__policy">Kein Spam, keine Weitergabe.</p>
+                <button type="submit" name="subscribe" class="newsletter__button">Anmelden</button>
+            </form>
+        </div>
+
+        <ul class="abo">
+          <li class="newsletter__previous"><a href="http://us7.campaign-archive1.com/home/?u=7561c4382788637203e9b973e&id=d6395d2dc2" title="View previous campaigns" class="newsletter__previous-link">Archiv alter Newsletter</a></li>
+          <li class="rss"><a href="<?php bloginfo('rss2_url'); ?>"><abbr title="Really Simple Syndication">RSS</abbr> Feed abonnieren</a></li>
+        </ul>
+        
+        <?php
+
+        echo $args['after_widget'];
+    }
+    
+    /**
+     * Settings form for widget
+     *
+     * @param array instance  Saved values from database.
+     */
+    public function form( $instance ) {
+        if (isset($instance['title' ])) {
+            $title = $instance['title'];
+        } else {
+            $title = __('New title', 'text_domain');
+        }
+        ?>
+        <p>
+        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+        <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+        </p>
+        <?php 
+    }
+    
+    /**
+     * Sanitize widget form values as they are saved.
+     *
+     * @see WP_Widget::update()
+     *
+     * @param array $new_instance Values just sent to be saved.
+     * @param array $old_instance Previously saved values from database.
+     *
+     * @return array Updated safe values to be saved.
+     */
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+
+        return $instance;
+    }
+}
+
+function register_mailchimp_widget() {
+    register_widget( 'MailChimp_Widget' );
 }
 
 ?>
