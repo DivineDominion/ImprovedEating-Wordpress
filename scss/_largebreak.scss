@@ -4,29 +4,16 @@
 //
 // ==========================================================================
 
-#body {
-  box-shadow: 0 20em 0 rgba(4, 164, 67, 0.5) inset;
-}
-
-
 // Layout
 
-#container {
+.container {
     @include container;
 }
 
-.layout-2c-l #content {
-    @include span-columns(8, 12);
-}
-.layout-2c-r #content {
-    @include span-columns(8 omega, 12);
-}
-    
-.layout-2c-l .sidebar {
-    @include span-columns(4 omega, 12);
-}
-.layout-2c-r .sidebar {
-    @include span-columns(4, 12);
+// Pullquote plugin style according to the grid
+.layout-2c-l .pulled-right {
+  @include span-columns(3, $total-columns, false, 'right');
+  margin-bottom: 0;
 }
 
 // Header
@@ -65,6 +52,9 @@
 // Menu
 
 #menu-primary .nav { float: left; }
+#menu-primary .menu-item { font-size: 2em; }
+#menu-primary .menu-item { background: #ccc;}
+#menu-primary .menu-item.current-menu-item { background: $white; }
 
 // Respond/Comments
 

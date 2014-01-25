@@ -71,7 +71,7 @@ function seamless_theme_setup() {
     /* Load styles. */
     add_theme_support( 
         'hybrid-core-styles', 
-        array( '25px', 'gallery', 'parent', 'style' ) 
+        array( /*'25px',*/ 'gallery', 'parent', 'style' ) 
     );
 
     /* Load widgets. */

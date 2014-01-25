@@ -25,21 +25,17 @@
 </head>
 
 <body class="<?php hybrid_body_class(); ?>">
-    <div id="body">
-        
-        <div id="container">
+      <header id="header">
+          <div class="container">
+              <hgroup id="branding">
+                  <h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                  <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+              </hgroup><!-- #branding -->
+          </div>
+        </header><!-- #header -->
 
-            <header id="header">
+      <?php if ( get_header_image() ) echo '<img class="header-image" src="' . esc_url( get_header_image() ) . '" alt="" />'; ?>
 
-                    <hgroup id="branding">
-                        <h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-                        <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-                    </hgroup><!-- #branding -->
+      <?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
 
-            </header><!-- #header -->
-
-            <?php if ( get_header_image() ) echo '<img class="header-image" src="' . esc_url( get_header_image() ) . '" alt="" />'; ?>
-
-            <?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
-
-            <div id="main">
+      <div id="main" role="main">

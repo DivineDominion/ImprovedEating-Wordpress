@@ -1,6 +1,6 @@
 <?php if ( have_comments() ) { ?>
 
-	<h2 id="comments-number"><?php comments_number( '', __( 'One Response', 'seamless' ), __( '% Responses', 'seamless' ) ); ?></h2>
+	<h2 id="comments-number"><?php comments_number( '', __( 'Eine Reaktion', 'seamless' ), __( '% Reaktionen', 'seamless' ) ); ?></h2>
 
 	<?php get_template_part( 'comments-loop-nav' ); // Loads the comment-loop-nav.php template. ?>
 

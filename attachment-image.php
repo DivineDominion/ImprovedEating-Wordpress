@@ -1,6 +1,6 @@
 <?php get_header(); // Loads the header.php template. ?>
 
-	<div id="content" class="hfeed">
+	    
 
 		<?php if ( have_posts() ) { ?>
 

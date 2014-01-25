@@ -4,6 +4,14 @@
 //
 // ==========================================================================
 
+body { font-size: 1.3em; }
+
+// Pullquote plugin style according to the grid
+.layout-2c-l .pulled-right {
+  @include span-columns($total-columns);
+  margin-bottom: 1em;
+}
+
 #menu-primary,
 #content { 
     @include rem-fallback(padding-left, $content-gutter);
