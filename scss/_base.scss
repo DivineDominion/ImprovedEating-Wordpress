@@ -517,7 +517,7 @@ li.comment .avatar {
 #menu-primary {
     clear:      both;
     display:    block;
-    padding-bottom: 1.5em;
+    width: 100%; // Necessary for stickUp.js
     text-align: left;
     background-color: rgba(4, 180, 67, 1.0);
 }
@@ -543,7 +543,7 @@ li.comment .avatar {
 }
 
 #footer {
-    background: desaturate(darken(rgba(4, 180, 67, 1.0), 5%), 5%);
+    background: $color-bg-footer;
     clear: both;
     color: darken($white, 5%);
     a { 
@@ -1317,7 +1317,6 @@ li.bypostauthor > .comment-text {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 1px 0 #666;
     background: rgba(0,0,255,0.05);
 }
 

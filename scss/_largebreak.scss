@@ -49,13 +49,6 @@
     text-align: left;
 }
 
-// Menu
-
-#menu-primary .nav { float: left; }
-#menu-primary .menu-item { font-size: 2em; }
-#menu-primary .menu-item { background: #ccc;}
-#menu-primary .menu-item.current-menu-item { background: $white; }
-
 // Respond/Comments
 
 #respond input[type="text"],
@@ -97,16 +90,36 @@
 
 // Primary Menu
 
-/*#menu-primary ul {
-    text-align: center;
-}*/
 .menu-toggle { display: none; }
+
+$menu-link-color: desaturate(lighten($link-color, 50%), 50%);
+$menu-link-hover: lighten($menu-link-color, 20%);
+
+#menu-primary { z-index: 1000; background: darken($color-bg-header, 2%);}
+#menu-primary .nav { float: left; }
+#menu-primary .menu-item { font-size: 0.75em; }
+#menu-primary .menu-item:first-child { margin-left: -1em; }
+#menu-primary .menu-item a,
+#menu-primary .menu-item.current-menu-item a,
+#menu-primary .menu-item.current-menu-item a:hover {
+  $padding: 0.4em;
+  padding-top: $padding;
+  padding-bottom: $padding;
+  margin-bottom: 0; 
+  border-bottom-width: 0;
+  
+  color: $menu-link-color;
+  font-weight: normal; 
+}
+#menu-primary .menu-item a:hover {
+  color: $menu-link-hover;
+  background: $color-bg-header-hover; 
+}
+
 
 #menu-primary .wrap {
     display:    block;
     clear:      both;
-    margin:     0;
-    padding:    0;
 }
 
 #menu-primary .menu-items {
@@ -157,6 +170,5 @@
 #menu-primary li a {
     display: inline-block;
     background-color: transparent;
-    padding: 0 0.5em 0 0;
-    margin-right: 1.5em;
+    padding: 0 1em;
 }

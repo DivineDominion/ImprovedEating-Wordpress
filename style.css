@@ -554,7 +554,7 @@ li.comment .avatar {
 #menu-primary {
   clear: both;
   display: block;
-  padding-bottom: 1.5em;
+  width: 100%;
   text-align: left;
   background-color: #04b443;
 }
@@ -581,7 +581,7 @@ li.comment .avatar {
 
 /* line 545, scss/_base.scss */
 #footer {
-  background: #07973b;
+  background: #056628;
   clear: both;
   color: #ffe3df;
 }
@@ -1443,23 +1443,22 @@ li.bypostauthor > .comment-text {
 /* line 1312, scss/_base.scss */
 #menu-primary li a {
   display: block;
-  color: #d5dce6;
+  color: #043c4d;
   margin-bottom: 0.2em;
   padding: 0.5em 0;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  text-shadow: 0 1px 0 #666;
   background: rgba(0, 0, 255, 0.05);
 }
 
-/* line 1325, scss/_base.scss */
+/* line 1324, scss/_base.scss */
 #menu-primary li a:hover,
 #menu-primary li.current-menu-item > a {
-  color: #222222;
+  color: #043c4d;
 }
 
-/* line 1347, scss/_base.scss */
+/* line 1346, scss/_base.scss */
 .clearfix:after,
 #container:after,
 #header:after,
@@ -1537,7 +1536,7 @@ li.comment:after, li.pingback:after, li.trackback:after,
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .container:after {
     content: "";
     display: table;
@@ -1576,27 +1575,7 @@ li.comment:after, li.pingback:after, li.trackback:after,
     text-align: left;
   }
 
-  /* line 54, scss/_largebreak.scss */
-  #menu-primary .nav {
-    float: left;
-  }
-
-  /* line 55, scss/_largebreak.scss */
-  #menu-primary .menu-item {
-    font-size: 2em;
-  }
-
-  /* line 56, scss/_largebreak.scss */
-  #menu-primary .menu-item {
-    background: #ccc;
-  }
-
   /* line 57, scss/_largebreak.scss */
-  #menu-primary .menu-item.current-menu-item {
-    background: #fff9f8;
-  }
-
-  /* line 64, scss/_largebreak.scss */
   #respond input[type="text"],
   #respond input[type="password"],
   #respond input[type="url"],
@@ -1607,7 +1586,7 @@ li.comment:after, li.pingback:after, li.trackback:after,
     padding: 10px 1.563em;
   }
 
-  /* line 73, scss/_largebreak.scss */
+  /* line 66, scss/_largebreak.scss */
   #sidebar-subsidiary .widget {
     float: left;
     width: 22.04724%;
@@ -1617,64 +1596,98 @@ li.comment:after, li.pingback:after, li.trackback:after,
     color: #333;
     font-size: 0.875em;
   }
-  /* line 78, scss/_largebreak.scss */
+  /* line 71, scss/_largebreak.scss */
   #sidebar-subsidiary .widget:first-child {
     margin-right: 0;
   }
 
-  /* line 86, scss/_largebreak.scss */
+  /* line 79, scss/_largebreak.scss */
   #footer .copyright {
     float: left;
     width: 49%;
     text-align: left;
   }
-  /* line 91, scss/_largebreak.scss */
+  /* line 84, scss/_largebreak.scss */
   #footer .credit {
     float: right;
     width: 49%;
     text-align: right;
   }
 
-  /*#menu-primary ul {
-      text-align: center;
-  }*/
-  /* line 103, scss/_largebreak.scss */
+  /* line 93, scss/_largebreak.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 105, scss/_largebreak.scss */
+  /* line 98, scss/_largebreak.scss */
+  #menu-primary {
+    z-index: 1000;
+    background: #04aa3f;
+  }
+
+  /* line 99, scss/_largebreak.scss */
+  #menu-primary .nav {
+    float: left;
+  }
+
+  /* line 100, scss/_largebreak.scss */
+  #menu-primary .menu-item {
+    font-size: 0.75em;
+  }
+
+  /* line 101, scss/_largebreak.scss */
+  #menu-primary .menu-item:first-child {
+    margin-left: -1em;
+  }
+
+  /* line 104, scss/_largebreak.scss */
+  #menu-primary .menu-item a,
+  #menu-primary .menu-item.current-menu-item a,
+  #menu-primary .menu-item.current-menu-item a:hover {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    margin-bottom: 0;
+    border-bottom-width: 0;
+    color: #e1ecef;
+    font-weight: normal;
+  }
+
+  /* line 114, scss/_largebreak.scss */
+  #menu-primary .menu-item a:hover {
+    color: white;
+    background: #038c34;
+  }
+
+  /* line 120, scss/_largebreak.scss */
   #menu-primary .wrap {
     display: block;
     clear: both;
-    margin: 0;
-    padding: 0;
   }
 
-  /* line 112, scss/_largebreak.scss */
+  /* line 125, scss/_largebreak.scss */
   #menu-primary .menu-items {
     zoom: 1;
   }
 
-  /* line 117, scss/_largebreak.scss */
+  /* line 130, scss/_largebreak.scss */
   #menu-primary .menu-items::before,
   #menu-primary .menu-items::after {
     content: "";
     display: table;
   }
 
-  /* line 122, scss/_largebreak.scss */
+  /* line 135, scss/_largebreak.scss */
   #menu-primary .menu-items::after {
     clear: both;
   }
 
-  /* line 126, scss/_largebreak.scss */
+  /* line 139, scss/_largebreak.scss */
   #menu-primary .menu-items > ul {
     width: 100%;
     margin: 60px auto;
   }
 
-  /* line 131, scss/_largebreak.scss */
+  /* line 144, scss/_largebreak.scss */
   #menu-primary ul ul {
     position: absolute;
     z-index: 1;
@@ -1684,32 +1697,31 @@ li.comment:after, li.pingback:after, li.trackback:after,
     text-align: left;
   }
 
-  /* line 140, scss/_largebreak.scss */
+  /* line 153, scss/_largebreak.scss */
   #menu-primary li:hover > ul {
     visibility: visible;
     margin: 0;
   }
 
-  /* line 145, scss/_largebreak.scss */
+  /* line 158, scss/_largebreak.scss */
   #menu-primary ul ul ul {
     top: 0;
     left: 230px;
     margin: 0 0 0 20px;
   }
 
-  /* line 151, scss/_largebreak.scss */
+  /* line 164, scss/_largebreak.scss */
   #menu-primary li {
     position: relative;
     float: left;
     display: inline-block;
   }
 
-  /* line 157, scss/_largebreak.scss */
+  /* line 170, scss/_largebreak.scss */
   #menu-primary li a {
     display: inline-block;
     background-color: transparent;
-    padding: 0 0.5em 0 0;
-    margin-right: 1.5em;
+    padding: 0 1em;
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 768px) and (min-resolution: 144dpi) {

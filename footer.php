@@ -24,5 +24,15 @@
     </footer><!-- #footer -->
 
     <?php wp_footer(); // wp_footer ?>
+    
+    <script src="<?php echo get_stylesheet_directory_uri();?>/js/stickUp.min.js"></script>
+    <script type="text/javascript">
+      jQuery(function($) {
+        $(document).ready( function() {
+          //enabling stickUp on the '#navbar' ID
+          $('#menu-primary').stickUp();
+        });
+      });
+    </script>
 </body>
 </html>

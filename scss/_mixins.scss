@@ -18,10 +18,13 @@ $special-link-hover-bg: desaturate(lighten($link-color, 40%), 30%);
 
 $comments-color: #f5f5f5;
 
-$color-link-menu: desaturate(lighten(#597EAF, 35%), 10%);
-$color-link-menu-active: #222222;
+$color-link-menu: saturate(darken($link-color, 25%), 10%);
+$color-link-menu-active: $color-link-menu;
 
 $color-bg-header: rgba(4, 180, 67, 1.0);
+$color-bg-header-active: saturate(lighten($color-bg-header, 5%), 10%);
+$color-bg-header-hover: darken($color-bg-header, 8%);
+$color-bg-footer: desaturate(darken(rgba(4, 180, 67, 1.0), 15%), 5%);
 
 // Typography
 // ==========================================================================
