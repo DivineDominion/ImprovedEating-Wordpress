@@ -25,7 +25,7 @@
 </head>
 
 <body class="<?php hybrid_body_class(); ?>">
-      <header id="header">
+      <header id="header" class="clearfix">
           <div class="container">
               <hgroup id="branding">
                   <h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>

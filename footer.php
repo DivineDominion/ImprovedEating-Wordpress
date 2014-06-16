@@ -8,9 +8,9 @@
 
     <?php get_template_part( 'menu', 'subsidiary' ); // Loads the menu-subsidiary.php template. ?>
 
-    <footer id="footer">
+    <footer id="footer" class="clearfix">
 
-        <div class="container clearfix">
+        <div class="container">
 
             <div class="footer-content">
                 <small class="license">

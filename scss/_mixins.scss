@@ -24,7 +24,9 @@ $color-link-menu-active: $color-link-menu;
 $color-bg-header: rgba(4, 180, 67, 1.0);
 $color-bg-header-active: saturate(lighten($color-bg-header, 5%), 10%);
 $color-bg-header-hover: darken($color-bg-header, 8%);
-$color-bg-footer: desaturate(darken(rgba(4, 180, 67, 1.0), 15%), 5%);
+$color-bg-footer: desaturate(darken($color-bg-header, 20%), 5%);
+
+$color-button: $color-bg-header;
 
 // Typography
 // ==========================================================================
