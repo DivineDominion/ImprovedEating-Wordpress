@@ -372,8 +372,6 @@ img {
 .thumbnail,
 .post-thumbnail {
     float:      right;
-    max-width:  190px; // 160 (size) + 30 (padding) - account for the border-box sizing
-    max-height: 150px; // 120 + 30
     margin:     0 0 1.563em 1.563em;
 }
 
