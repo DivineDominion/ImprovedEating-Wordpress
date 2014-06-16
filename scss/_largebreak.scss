@@ -97,7 +97,7 @@ $menu-link-hover: lighten($menu-link-color, 20%);
 
 #menu-primary { z-index: 1000; background: darken($color-bg-header, 2%);}
 #menu-primary .nav { float: left; }
-#menu-primary .menu-item { font-size: 0.75em; }
+/*#menu-primary .menu-item { font-size: 0.75em; }*/
 #menu-primary .menu-item:first-child { margin-left: -1em; }
 #menu-primary .menu-item a,
 #menu-primary .menu-item.current-menu-item a,

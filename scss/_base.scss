@@ -369,24 +369,6 @@ img {
     height:     auto;
 }
 
-/*
-TODO decide to remove: it fucks up comment avatar styles
-#content a img {
-    padding:    0.938em;
-    background: #f5f5f5;
-    border:     1px solid #e5e5e5;
-    &.size-large,
-    &.size-full {
-        padding: 0.938em;
-    }
-}
-*/
-
-#content a:hover img {
-    background: #efefef;
-    border:     1px solid #d5d5d5;
-}
-
 // Thumbnails
 
 .thumbnail,
@@ -976,7 +958,6 @@ a.page-numbers:hover,
     font-weight: bold;
     font-size: 18px;
     font-size: 1.125rem;
-    margin-left: 1.1111em;
 }
 
 .widget-tags {
@@ -1025,9 +1006,6 @@ a.page-numbers:hover,
     }
 }
 
-.sidebar ul {
-    margin-left: 1.25em;
-}
 // ==========================================================================
 // Specific
 // ==========================================================================

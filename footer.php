@@ -10,7 +10,7 @@
 
     <footer id="footer">
 
-        <div class="container">
+        <div class="container clearfix">
 
             <div class="footer-content">
                 <small class="license">

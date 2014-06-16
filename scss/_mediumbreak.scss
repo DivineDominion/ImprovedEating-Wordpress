@@ -13,6 +13,7 @@ body { font-size: 1.3em; }
 }
 
 #menu-primary,
+#sidebar-primary,
 #content { 
     @include rem-fallback(padding-left, $content-gutter);
     @include rem-fallback(padding-right, $content-gutter);
