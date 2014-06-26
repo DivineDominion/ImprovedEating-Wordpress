@@ -474,4 +474,8 @@ function register_mailchimp_widget() {
     register_widget( 'MailChimp_Widget' );
 }
 
+add_action('comment_form_before', 'improvedtheming_comment_form_before');
+function improvedtheming_comment_form_before() {
+?><p>Bitte halte dich an die <a href="/de/kommentarregeln">Kommentarregeln</a> für diesen Blog.</p><?php
+}
 ?>
