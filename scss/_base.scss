@@ -869,7 +869,13 @@ p video {
 
 .loop-pagination,
 .loop-nav {
-    clear:       both;
+    clear: both;
+    border-top: 2px solid #ccccd0;
+    padding-top: 1.563em;
+}
+
+.page-numbers {
+  @include font-size-smaller;
 }
 
 .page-numbers,
@@ -877,8 +883,15 @@ p video {
     display:    inline-block;
     margin:     0 0.313em;
     padding:    0.313em 0.938em;
-    border:     1px solid #efefef;
-    background: #f5f5f5;
+    border:     2px solid $color-button-b;
+    color:      $color-button-b;
+    background: transparent;
+    text-decoration: none;
+    @include transition-button;
+    &:hover {
+      background: $color-button-b;
+      color: $color-comment-bg;
+    }
 }
 
 .loop-nav {
@@ -893,14 +906,11 @@ p video {
     }
 }
 
-a.page-numbers:hover,
-.loop-nav a:hover {
-    border-color: #d5d5d5;
-    background:   #efefef;
-}
-
-.page-numbers.current {
-    color: #050505;
+.page-numbers.current,
+.page-numbers.current:hover {
+  color: #555;
+  border-color: #999;
+  background: transparent;
 }
 
 // Comments pagination
@@ -940,7 +950,7 @@ a.page-numbers:hover,
 }
 
 .widget ul {
-  font-size: smaller;
+  @include font-size-smaller;
 }
 
 .widget-tags {
@@ -1136,8 +1146,7 @@ li.bypostauthor > .comment-text {
     float:      right;
     margin:     0em 0.625em 0.625em 1em;
     padding:    0.313em 1.563em;
-    font-size:  13px;
-    font-size:  0.8125rem;
+    @include font-size-smaller;
     color:      $color-button;
     background: transparent;
     border:     2px solid $color-button;
