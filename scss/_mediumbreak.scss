@@ -19,6 +19,11 @@ body { font-size: 1.3em; }
     @include rem-fallback(padding-right, $content-gutter);
 }
 
+.comment-list { font-size: 1em; }
+.entry-title {
+  font-size:  44px;
+  font-size:  2.75rem;
+}
 .sidebar-primary {
   padding-left: 1em;
   padding-right: 1em;

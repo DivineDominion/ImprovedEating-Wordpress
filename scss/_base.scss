@@ -543,14 +543,15 @@ li.comment .avatar {
 #site-title {
     margin:      0;
     text-align:  center;
-    font-size:   40px;
-    font-size:   2.5rem;
     padding: 0 10px;
+    line-height: 1em;
+    font-size: normal;
     a {
         background: url('images/logo.png?v=1.2.7') top left no-repeat;
         background-size: contain;
         display: inline-block;
         width: 100%;
+        min-height: 55px;
         max-width: 760px;
         max-height: 100px;
         
@@ -621,8 +622,8 @@ li.comment .avatar {
 .entry-title {
     word-wrap:  break-word;
     color:      #4A4A4A;
-    font-size:  44px;
-    font-size:  2.75rem;
+    font-size:  32px;
+    font-size:  2.0rem;
     font-weight: bold;
     font-family: $post_title;
     line-height: 1.2em;
@@ -1079,8 +1080,10 @@ a.page-numbers:hover,
 // Comment list
 
 .comment-list {
+  font-size: 0.8em;
     margin:     0 0 1.563em 0;
     list-style: none;
+    padding-left: 0;
     ol.children {
         border-left: 10px solid $comments-color;
         margin-left: 1px; /* 1px border separation */
@@ -1265,6 +1268,7 @@ li.bypostauthor > .comment-text {
 
 #menu-primary {
     text-align: center;
+    z-index: 1000;
 }
 
 .menu-toggle {
@@ -1274,7 +1278,6 @@ li.bypostauthor > .comment-text {
     margin:      0 auto;
     line-height: 21px;
     font-size:   0.9375rem;
-    background:  rgba(0,0,180,0.2);
     color: $white;
     padding: 0.78em 0;
     font-weight: bold;
