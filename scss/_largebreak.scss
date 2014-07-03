@@ -92,9 +92,6 @@
 
 .menu-toggle { display: none; }
 
-$menu-link-color: desaturate(lighten($link-color, 50%), 50%);
-$menu-link-hover: lighten($menu-link-color, 20%);
-
 #menu-primary { z-index: 1000; background: darken($color-bg-header, 2%); overflow-y: hidden; }
 #menu-primary .nav { float: left; }
 #menu-primary .menu-item { font-size: 0.75em; }
@@ -107,12 +104,12 @@ $menu-link-hover: lighten($menu-link-color, 20%);
   margin-bottom: 0; 
   border-bottom-width: 0;
   
-  color: $menu-link-color;
+  color: $color-link-menu;
   font-weight: normal; 
 }
 #menu-primary .menu-item.current-menu-item a:hover,
 #menu-primary .menu-item a:hover {
-  color: $menu-link-hover;
+  color: $color-link-menu-hover;
   background: $color-bg-header-hover; 
 }
 

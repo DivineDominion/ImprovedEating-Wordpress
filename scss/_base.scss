@@ -579,30 +579,6 @@ li.comment .avatar {
 // Content
 // ==========================================================================
 
-// BREADCRUMBS
-
-.breadcrumb-trail {
-    padding:   0 0 1.563em 0;
-    color:     #797979;
-    font-size: 14px;
-    font-size: 0.875rem;
-    .sep,
-    a,
-    .trail-end {
-        margin-left: 0.313em;
-    }
-}
-
-.breadcrumb-trail .trail-end {
-    color: #444444;
-}
-
-.breadcrumb-trail a {
-    color:         $black;
-    &:hover {
-    }
-}
-
 // POSTS
 
 .hentry,

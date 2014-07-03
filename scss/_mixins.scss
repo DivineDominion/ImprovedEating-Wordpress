@@ -18,7 +18,8 @@ $special-link-hover-bg: desaturate(lighten($link-color, 40%), 30%);
 
 $comments-color: #f5f5f5;
 
-$color-link-menu: saturate(darken($link-color, 25%), 10%);
+$color-link-menu: desaturate(lighten($link-color, 50%), 50%);
+$color-link-menu-hover: lighten($color-link-menu, 20%);
 $color-link-menu-active: $color-link-menu;
 
 $color-bg-header: rgba(4, 180, 67, 1.0);
