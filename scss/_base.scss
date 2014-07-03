@@ -41,8 +41,9 @@ html {
 
 body {
     overflow-x:  hidden;
-    font-size:   1em;
-    line-height: 1.6;
+    font-size:   15px;
+    font-size:   0.9375em;
+    line-height: 1.466;
     font-family: $sans-serif;
     color:       $lightblack;
     background-color: #d8d8d8;
@@ -79,33 +80,34 @@ a[rel="footnote"] {
 // Headers 
 
 h1 {
-    font-size: 25px;
-    font-size: 1.563rem;
+/*    font-size: 25px;*/
+    font-size: 1.563em;
 }
 
 h2 {
-    font-size: 23px;
-    font-size: 1.438rem;
+/*    font-size: 21px;*/
+    font-size: 1.4em;
+    line-height: 1em;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 21px;
-    font-size: 1.313rem;
+/*    font-size: 21px;*/
+    font-size: 1.313em;
 }
 
 h4 {
-    font-size: 19px;
-    font-size: 1.188rem;
+/*    font-size: 19px;*/
+    font-size: 1.188em;
 }
 
 h5 {
-    font-size: 17px;
-    font-size: 1.063rem;
+/*    font-size: 17px;*/
+    font-size: 1.063em;
 }
 
 h6 {
-    font-size: 15px;
+/*    font-size: 15px;*/
     font-size: 0.938rem;
 }
 
@@ -505,7 +507,7 @@ li.comment .avatar {
 #content {
     width: 100%;
     background: $white;
-    padding-top: 3.26em;
+    padding-top: 1.563em;
     padding-bottom: 1.563em;
 }
 
@@ -620,6 +622,12 @@ li.comment .avatar {
     color: #9B9B9B;
 }
 
+.entry-byline,
+.entry-meta {
+    font-size:     14px;
+    font-size:     0.875rem;
+}
+
 // Post content and excerpts
 
 .entry-content,
@@ -635,8 +643,6 @@ li.comment .avatar {
         border-bottom: 1px solid transparent;
         padding:       0 0.125em;
         font-style:    normal;
-        font-size:     17px;
-        font-size:     1.0625rem;
         &:hover {
             border-bottom:   1px solid #d5d5d5;
             background:      #e5e5e5;
