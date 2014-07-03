@@ -6,9 +6,10 @@
 
 	<div class="comment-content comment-text">
 		<?php comment_text(); ?>
+    
+    	<?php echo hybrid_comment_reply_link_shortcode( array() ); ?>
 	</div><!-- .comment-content -->
 
-	<?php echo hybrid_comment_reply_link_shortcode( array() ); ?>
 
 <?php /* No closing </li> is needed.  WordPress will know where to add it. */ ?>
 

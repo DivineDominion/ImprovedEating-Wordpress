@@ -1116,12 +1116,13 @@ a.page-numbers:hover,
 
 // Comment text/content
 
+.comment-content { display: inline-block; }
 .comment-text {
     clear:     left;
     padding:   1.563em 0.750em 0 0.750em;
     border: 1px solid transparent; /* fixes padding-bottom ignorance*/
     word-wrap: break-word;
-    background: #f5f5f5;
+    background: $color-comment-bg;
 }
 
 li.bypostauthor > .comment-text {
@@ -1131,20 +1132,22 @@ li.bypostauthor > .comment-text {
 // Reply link
 
 .comment-reply-link {
-    position:   relative;
     display:    inline-block;
     float:      right;
-    margin:     -2.4em 0.625em 0 0;
+    margin:     0em 0.625em 0.625em 1em;
     padding:    0.313em 1.563em;
     font-size:  13px;
     font-size:  0.8125rem;
-    font-style: italic;
-    color:      $black;
-    background: #e5e5e5;
+    color:      $color-button;
+    background: transparent;
+    border:     2px solid $color-button;
+    border-radius: 2px;
     text-align: center;
+    text-decoration: none;
+    @include transition-button;
     &:hover {
-        background:      #d5d5d5;
-        text-decoration: none;
+        background: $color-button;
+        color: $color-comment-bg;
     }
 }
 
@@ -1195,25 +1198,23 @@ li.bypostauthor > .comment-text {
     input[type="submit"] {
         border: 2px solid $color-button;
         color: $color-button;
+        font-size:   15px;
+        font-size:   1rem;
         padding: 0.750em 1.250em;
         background: transparent;
         border-radius: 3px;
         
-        $transition: all 0.15s ease-in-out;
-        -webkit-transition: $transition;
-        -moz-transition: $transition;
-        -ms-transition: $transition;
-        -o-transition: $transition;
-        transition: $transition;
-    }
-    button:hover,
-    input[type="submit"]:hover {
-        background: $color-button;
-        color: white;
+        @include transition-button;
+        
+        &:hover,
+        &:hover {
+            background: $color-button;
+            color: white;
+        }
     }
     textarea {
         width:   100%;
-        padding: 1.250em;
+        padding: 0.4em;
     }
  }
 
