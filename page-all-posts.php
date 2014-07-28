@@ -5,7 +5,7 @@ Template Name: All Posts (index)
 
 get_header(); ?>
 
-    <div id="content" class="hfeed">
+    <div id="content" class="hfeed all-posts">
         <div class="container">
             <?php get_sidebar( 'newsletter' ); ?>
             

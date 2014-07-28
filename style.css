@@ -3,7 +3,7 @@
  * Theme URI: https://github.com/DivineDominion/ImprovedEating-Wordpress
  * Description: A responsive theme built on top of Seamless and Hybrid Core.
  * Tags: light, one-column, two-columns, right-sidebar, left-sidebar, flexible-width, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
- * Version: 2.0.4
+ * Version: 2.1.0
  * Author: Christian Tietze
  * Author URI: http://christiantietze.de
  * License: GNU General Public License v2.0
@@ -617,7 +617,7 @@ li.comment .avatar {
 
 /* line 584, scss/_base.scss */
 .banner {
-  max-height: 400px;
+  max-height: 800px;
   overflow: hidden;
   position: relative;
   clear: both;
@@ -1160,6 +1160,24 @@ html .newsletter__button:focus {
   margin-top: 25px;
 }
 
+/* line 55, scss/_newsletter.scss */
+.all-posts .abo {
+  display: none;
+}
+/* line 56, scss/_newsletter.scss */
+.all-posts .newsletter__email {
+  font-size: 0.8em;
+}
+/* line 57, scss/_newsletter.scss */
+.all-posts .newsletter__policy {
+  float: left;
+}
+/* line 58, scss/_newsletter.scss */
+.all-posts .newsletter__button {
+  float: right;
+  margin-bottom: 1em;
+}
+
 /* line 1034, scss/_base.scss */
 #sidebar-subsidiary {
   overflow: hidden;
@@ -1584,6 +1602,7 @@ img#wpstats {
   /* line 18, scss/_mediumbreak.scss */
   #site-title {
     width: auto;
+    bottom: 100px;
   }
 
   /* line 22, scss/_mediumbreak.scss */
