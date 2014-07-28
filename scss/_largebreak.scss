@@ -92,7 +92,7 @@
 
 .menu-toggle { display: none; }
 
-#menu-primary { z-index: 1000; background: darken($color-bg-header, 2%); overflow-y: hidden; }
+#menu-primary { z-index: 1000; background: transparentize(darken($color-bg-header, 2%), 0.2); overflow-y: hidden; }
 #menu-primary .nav { float: left; }
 #menu-primary .menu-item { font-size: 0.75em; }
 #menu-primary #menu-primary-items .menu-item:first-child { margin-left: -1em; }

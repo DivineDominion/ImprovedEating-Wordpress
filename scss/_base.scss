@@ -490,7 +490,8 @@ li.comment .avatar {
 }
 
 #header {
-    padding-top: 2em;
+    padding-top: 0;
+    position: relative;
     background-color: $color-bg-header;
 }
 
@@ -535,10 +536,7 @@ li.comment .avatar {
 // Header
 // ==========================================================================
 
-#header { }
-
 #branding {
-    display: inline-block;
     width:   100%;
 }
 
@@ -548,6 +546,12 @@ li.comment .avatar {
     padding: 0 10px;
     line-height: 1em;
     font-size: normal;
+    
+    position: absolute; 
+    bottom: 40px; 
+    z-index: 1000; 
+    width: 100%;
+    
     a {
         background: url('images/logo.png?v=1.2.7') top left no-repeat;
         background-size: contain;
@@ -576,6 +580,25 @@ li.comment .avatar {
     font-weight: normal;
     text-align:  center;
 }
+
+.banner { 
+  max-height: 400px; 
+  overflow: hidden; 
+  position: relative; 
+  clear: both; 
+  margin: 0; 
+}
+.aspect-ratio-placeholder { position: relative; width: 100%; margin: 0 auto; }
+.aspect-ratio-fill { padding-bottom: 42%; }
+.header__image * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
 
 // ==========================================================================
 // Content

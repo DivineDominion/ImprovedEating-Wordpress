@@ -478,4 +478,7 @@ add_action('comment_form_before', 'improvedtheming_comment_form_before');
 function improvedtheming_comment_form_before() {
 ?><p>Bitte halte dich an die <a href="/de/kommentarregeln">Kommentarregeln</a> für diesen Blog.</p><?php
 }
+
+wp_register_script( 'picturefill', get_template_directory_uri() . '/js/picturefill.min.js', '20140728', true );
+wp_enqueue_script('picturefill')
 ?>

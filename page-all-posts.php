@@ -7,6 +7,8 @@ get_header(); ?>
 
     <div id="content" class="hfeed">
         <div class="container">
+            <?php get_sidebar( 'newsletter' ); ?>
+            
             <?php get_template_part( 'loop-meta' ); ?>
 
             <?php

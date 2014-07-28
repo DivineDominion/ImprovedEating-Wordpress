@@ -25,17 +25,28 @@
 </head>
 
 <body class="<?php hybrid_body_class(); ?>">
-      <header id="header" class="clearfix">
-          <div class="container">
+      <header id="header" class="">
+          <div class="container container--header">
               <hgroup id="branding">
                   <h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
                   <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
               </hgroup><!-- #branding -->
           </div>
+        
+          <figure class="banner">
+              <div class="aspect-ratio-placeholder">
+                  <div class="aspect-ratio-fill"></div>
+                  <picture class="header__image">
+                      <source class="header__image-source" srcset="<?php bloginfo('template_directory'); ?>/images/banner@2x.jpg" media="(min-width: 1000px)">
+                      <source class="header__image-source" srcset="<?php bloginfo('template_directory'); ?>/images/banner.jpg">
+              
+                      <img class="header__image-source" srcset="<?php bloginfo('template_directory'); ?>/images/banner.jpg" alt="">
+                  </picture>
+              </div>
+          </figure>
+          
+          <?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
+          
         </header><!-- #header -->
-
-      <?php if ( get_header_image() ) echo '<img class="header-image" src="' . esc_url( get_header_image() ) . '" alt="" />'; ?>
-
-      <?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
-
+        
       <div id="main" role="main">
