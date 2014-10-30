@@ -40,7 +40,9 @@
                       <source class="header__image-source" srcset="<?php bloginfo('template_directory'); ?>/images/banner@2x.jpg" media="(min-width: 1000px)">
                       <source class="header__image-source" srcset="<?php bloginfo('template_directory'); ?>/images/banner.jpg">
               
-                      <img class="header__image-source" srcset="<?php bloginfo('template_directory'); ?>/images/banner.jpg" alt="">
+                      <noscript>
+                        <img class="header__image-source" srcset="<?php bloginfo('template_directory'); ?>/images/banner.jpg" alt="">
+                      </noscript>
                   </picture>
               </div>
           </figure>

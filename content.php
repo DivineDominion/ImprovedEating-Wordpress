@@ -4,7 +4,7 @@
 
 		<header class="entry-header">
 			<h1 class="entry-title"><?php single_post_title(); ?></h1>
-			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( 'von [entry-author], [entry-published][entry-terms before=". Abgelegt in " taxonomy="category"] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'seamless' ) . '</div>' ); ?>
+			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( 'von [entry-author][entry-terms before=". Abgelegt in " taxonomy="category"] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'seamless' ) . '</div>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
@@ -16,7 +16,7 @@
 
 		<header class="entry-header">
 			<?php the_title( '<h2 class="entry-title"><a href="' . get_permalink() . '">', '</a></h2>' ); ?>
-			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( 'von [entry-author], [entry-published][entry-terms before=". Abgelegt in " taxonomy="category"]', 'seamless' ) . '</div>' ); ?>
+			<?php echo apply_atomic_shortcode( 'entry_byline', '<div class="entry-byline">' . __( 'von [entry-author][entry-terms before=". Abgelegt in " taxonomy="category"]', 'seamless' ) . '</div>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-summary">

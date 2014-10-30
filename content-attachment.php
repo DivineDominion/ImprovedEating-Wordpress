@@ -13,7 +13,7 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( 'Published on [entry-published] [entry-edit-link before="| "]', 'seamless' ) . '</div>' ); ?>
+			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( 'Published on  [entry-edit-link before="| "]', 'seamless' ) . '</div>' ); ?>
 		</footer><!-- .entry-footer -->
 
 	<?php } else { ?>

@@ -14,7 +14,7 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[post-format-link] updated on [entry-published] [entry-edit-link before="| "]<br />[entry-terms taxonomy="category" before="Posted in "] [entry-terms before="Tagged "]', 'seamless' ) . '</div>' ); ?>
+			<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[post-format-link] updated on  [entry-edit-link before="| "]<br />[entry-terms taxonomy="category" before="Posted in "] [entry-terms before="Tagged "]', 'seamless' ) . '</div>' ); ?>
 		</footer><!-- .entry-footer -->
 
 	<?php } else { ?>
@@ -31,7 +31,7 @@
 		<?php if ( !get_option( 'show_avatars' ) ) { ?>
 
 			<footer class="entry-footer">
-				<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[post-format-link] updated on [entry-published] [entry-permalink before="| "] [entry-edit-link before="| "]', 'seamless' ) . '</div>' ); ?>
+				<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[post-format-link] updated on  [entry-permalink before="| "] [entry-edit-link before="| "]', 'seamless' ) . '</div>' ); ?>
 			</footer><!-- .entry-footer -->
 
 		<?php } ?>
