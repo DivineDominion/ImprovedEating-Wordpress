@@ -12,7 +12,10 @@ get_header(); ?>
             <?php get_template_part( 'loop-meta' ); ?>
 
             <?php
-            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            if ( get_query_var('paged') ) { $paged = get_query_var('paged'); }
+            elseif ( get_query_var('page') ) { $paged = get_query_var('page'); }
+            else { $paged = 1; }
+            
             $args = array( 'post_type' => 'post', 'posts_per_page' => 10, 'paged' => $paged );
             $wp_query = new WP_Query($args); 
         
